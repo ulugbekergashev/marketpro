@@ -7,7 +7,7 @@ const JobGuarantee = () => {
     e.preventDefault();
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: 'auto' });
     }
   };
 
@@ -20,77 +20,77 @@ const JobGuarantee = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="bg-[#0F1623]/80 backdrop-blur-xl border border-blue-500/30 rounded-[2.5rem] p-8 md:p-12 shadow-[0_0_50px_rgba(37,99,235,0.15)]">
           <div className="flex flex-col lg:flex-row items-center gap-12">
-            
+
             {/* Left: Text Content */}
             <div className="lg:w-3/5 space-y-6">
               <div className="inline-flex items-center gap-2 bg-green-500/20 text-green-400 px-4 py-1.5 rounded-full text-sm font-bold uppercase tracking-wider border border-green-500/20">
                 <ShieldCheck className="w-4 h-4" /> Rasmiy Kafolat
               </div>
-              
+
               <h2 className="text-4xl md:text-5xl font-extrabold text-white leading-tight">
-                Kursni bitiring va <br/>
+                Kursni bitiring va <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-300">
                   $1000 maoshli ishga ega bo'ling
                 </span>
               </h2>
-              
+
               <p className="text-slate-300 text-lg leading-relaxed">
-                Biz o'z metodikamizga shu qadar ishonamizki, natija uchun to'liq javobgarlikni bo'ynimizga olamiz. 
+                Biz o'z metodikamizga shu qadar ishonamizki, natija uchun to'liq javobgarlikni bo'ynimizga olamiz.
                 Siz shunchaki o'qiysiz va imtihon topshirasiz — biz esa sizni hamkor kompaniyalarga ishga joylaymiz.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
                 <div className="flex items-center gap-3 bg-white/5 p-4 rounded-xl">
-                    <FileSignature className="w-6 h-6 text-blue-400" />
-                    <span className="text-white font-medium">Shartnoma asosida</span>
+                  <FileSignature className="w-6 h-6 text-blue-400" />
+                  <span className="text-white font-medium">Shartnoma asosida</span>
                 </div>
                 <div className="flex items-center gap-3 bg-white/5 p-4 rounded-xl">
-                    <Briefcase className="w-6 h-6 text-blue-400" />
-                    <span className="text-white font-medium">Hamkorlar bazasi</span>
+                  <Briefcase className="w-6 h-6 text-blue-400" />
+                  <span className="text-white font-medium">Hamkorlar bazasi</span>
                 </div>
               </div>
             </div>
 
             {/* Right: Visual Offer Card */}
             <div className="lg:w-2/5 w-full">
-                <motion.div 
-                    initial={{ scale: 0.9, rotate: 2 }}
-                    whileInView={{ scale: 1, rotate: 0 }}
-                    transition={{ type: "spring", stiffness: 100 }}
-                    className="bg-gradient-to-br from-white to-slate-200 text-brand-dark rounded-2xl p-8 shadow-2xl relative transform rotate-[-2deg] hover:rotate-0 transition-transform duration-500"
+              <motion.div
+                initial={{ scale: 0.9, rotate: 2 }}
+                whileInView={{ scale: 1, rotate: 0 }}
+                transition={{ type: "spring", stiffness: 100 }}
+                className="bg-gradient-to-br from-white to-slate-200 text-brand-dark rounded-2xl p-8 shadow-2xl relative transform rotate-[-2deg] hover:rotate-0 transition-transform duration-500"
+              >
+                <div className="absolute top-4 right-4 text-6xl opacity-10 font-black">JOB</div>
+
+                <div className="border-b-2 border-dashed border-slate-300 pb-6 mb-6">
+                  <h3 className="text-2xl font-bold mb-1">JOB OFFER</h3>
+                  <p className="text-slate-500 text-sm uppercase tracking-widest">Ishga taklifnoma</p>
+                </div>
+
+                <div className="space-y-4 mb-8">
+                  <div className="flex justify-between">
+                    <span className="text-slate-600 font-medium">Lavozim:</span>
+                    <span className="font-bold">Marketolog / Menejer</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-slate-600 font-medium">Oylik maosh:</span>
+                    <span className="font-extrabold text-green-600 bg-green-100 px-2 rounded">$1000 dan boshlab</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-slate-600 font-medium">Holati:</span>
+                    <span className="text-blue-600 font-bold flex items-center gap-1">
+                      <CheckCircle2 className="w-4 h-4" /> Kafolatlangan
+                    </span>
+                  </div>
+                </div>
+
+                <a
+                  href="#contact"
+                  onClick={(e) => handleScroll(e, 'contact')}
+                  className="block w-full bg-brand-dark text-white text-center py-4 rounded-xl font-bold hover:bg-blue-900 transition-colors cursor-pointer"
                 >
-                    <div className="absolute top-4 right-4 text-6xl opacity-10 font-black">JOB</div>
-                    
-                    <div className="border-b-2 border-dashed border-slate-300 pb-6 mb-6">
-                        <h3 className="text-2xl font-bold mb-1">JOB OFFER</h3>
-                        <p className="text-slate-500 text-sm uppercase tracking-widest">Ishga taklifnoma</p>
-                    </div>
-
-                    <div className="space-y-4 mb-8">
-                        <div className="flex justify-between">
-                            <span className="text-slate-600 font-medium">Lavozim:</span>
-                            <span className="font-bold">Marketolog / Menejer</span>
-                        </div>
-                        <div className="flex justify-between">
-                            <span className="text-slate-600 font-medium">Oylik maosh:</span>
-                            <span className="font-extrabold text-green-600 bg-green-100 px-2 rounded">$1000 dan boshlab</span>
-                        </div>
-                        <div className="flex justify-between">
-                            <span className="text-slate-600 font-medium">Holati:</span>
-                            <span className="text-blue-600 font-bold flex items-center gap-1">
-                                <CheckCircle2 className="w-4 h-4" /> Kafolatlangan
-                            </span>
-                        </div>
-                    </div>
-
-                    <a 
-                        href="#contact" 
-                        onClick={(e) => handleScroll(e, 'contact')}
-                        className="block w-full bg-brand-dark text-white text-center py-4 rounded-xl font-bold hover:bg-blue-900 transition-colors cursor-pointer"
-                    >
-                        O'rin band qilish
-                    </a>
-                </motion.div>
+                  O'rin band qilish
+                </a>
+              </motion.div>
             </div>
 
           </div>

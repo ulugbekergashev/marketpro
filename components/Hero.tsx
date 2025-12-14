@@ -23,7 +23,7 @@ const Hero = () => {
     e.preventDefault();
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: 'auto' });
     }
   };
 
@@ -31,17 +31,17 @@ const Hero = () => {
     <section className="relative min-h-screen bg-brand-dark text-white overflow-hidden flex items-center pt-24 pb-12 lg:pt-32">
       {/* Dynamic Background */}
       <div className="absolute inset-0 z-0">
-         <div className="absolute top-[-20%] left-[-10%] w-[800px] h-[800px] bg-blue-600/20 rounded-full blur-[120px] mix-blend-screen animate-pulse duration-10000"></div>
-         <div className="absolute bottom-[-20%] right-[-10%] w-[600px] h-[600px] bg-purple-600/20 rounded-full blur-[120px] mix-blend-screen"></div>
-         <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-10"></div>
+        <div className="absolute top-[-20%] left-[-10%] w-[800px] h-[800px] bg-blue-600/20 rounded-full blur-[120px] mix-blend-screen animate-pulse duration-10000"></div>
+        <div className="absolute bottom-[-20%] right-[-10%] w-[600px] h-[600px] bg-purple-600/20 rounded-full blur-[120px] mix-blend-screen"></div>
+        <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-10"></div>
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          
+
           {/* Content Left */}
           <div className="space-y-8">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               className="inline-flex items-center gap-2 bg-green-500/10 border border-green-500/20 rounded-full px-4 py-1.5 backdrop-blur-md"
@@ -50,19 +50,19 @@ const Hero = () => {
               <span className="text-sm font-bold text-green-100">Bitiruvchilarga $1000 lik ish KAFOLATI</span>
             </motion.div>
 
-            <motion.h1 
+            <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
               className="text-5xl lg:text-7xl font-extrabold leading-[1.1]"
             >
-              Marketpleysda <br/>
+              Marketpleysda <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-200 to-white text-glow">
                 TOP Mutaxassis
               </span>
             </motion.h1>
 
-            <motion.p 
+            <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
@@ -71,22 +71,22 @@ const Hero = () => {
               Biznesingizni yo'lga qo'ying yoki bizning o'quv dasturimizni tugatib, <span className="text-white font-bold border-b border-green-500 text-green-400">kafolatlangan $1000</span> maoshli ishga joylashing.
             </motion.p>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
               className="flex flex-col sm:flex-row gap-4"
             >
-              <a 
-                href="#contact" 
+              <a
+                href="#contact"
                 onClick={(e) => handleScroll(e, 'contact')}
                 className="bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 px-8 rounded-2xl transition-all shadow-[0_0_40px_rgba(37,99,235,0.3)] hover:shadow-[0_0_60px_rgba(37,99,235,0.5)] flex items-center justify-center gap-2 cursor-pointer"
               >
                 Kursga Yozilish
                 <ArrowRight className="w-5 h-5" />
               </a>
-              <a 
-                href="#results" 
+              <a
+                href="#results"
                 onClick={(e) => handleScroll(e, 'results')}
                 className="bg-white/5 hover:bg-white/10 border border-white/10 text-white font-semibold py-4 px-8 rounded-2xl transition-all flex items-center justify-center gap-2 backdrop-blur-sm cursor-pointer"
               >
@@ -106,7 +106,7 @@ const Hero = () => {
           </div>
 
           {/* Image Right (AI Generated) */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.4 }}
@@ -116,37 +116,29 @@ const Hero = () => {
             <div className="absolute w-[500px] h-[500px] border border-white/5 rounded-full animate-[spin_10s_linear_infinite]"></div>
             <div className="absolute w-[400px] h-[400px] border border-blue-500/20 rounded-full animate-[spin_15s_linear_infinite_reverse]"></div>
 
-            <div className="relative z-10 w-full max-w-md aspect-[3/4] rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-slate-900">
-               {isLoadingImage ? (
-                  <div className="w-full h-full flex flex-col items-center justify-center bg-slate-800 animate-pulse">
-                    <Sparkles className="w-12 h-12 text-slate-600 mb-4" />
-                    <p className="text-slate-500 text-sm">Mentor surati yuklanmoqda (AI)...</p>
-                  </div>
-               ) : heroImage ? (
-                  <img 
-                    src={heroImage} 
-                    alt="Market Pro Mentor" 
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-                  />
-               ) : (
-                  // Fallback image if AI generation fails or no key
-                  <img 
-                    src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=2940&auto=format&fit=crop" 
-                    alt="Default Mentor" 
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-700 grayscale hover:grayscale-0"
-                  />
-               )}
-               
-               {/* Floating Badge */}
-               <div className="absolute bottom-6 left-6 right-6 glass-card p-4 rounded-xl flex items-center justify-between">
-                  <div>
-                    <p className="text-xs text-slate-400">Asosiy Maqsad</p>
-                    <p className="font-bold text-white">$1000+ Daromad</p>
-                  </div>
-                  <div className="bg-green-500 text-white font-bold text-xs px-2 py-1 rounded">
-                    KAFOLAT
-                  </div>
-               </div>
+            <div className="relative z-10 w-full max-w-[470px] aspect-[3/4] rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-slate-900">
+              {isLoadingImage ? (
+                <div className="w-full h-full flex flex-col items-center justify-center bg-slate-800 animate-pulse">
+                  <Sparkles className="w-12 h-12 text-slate-600 mb-4" />
+                  <p className="text-slate-500 text-sm">Mentor surati yuklanmoqda...</p>
+                </div>
+              ) : <img
+                src="/images/hero-final.png"
+                alt="Market Pro Mentor"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+              />
+              }
+
+              {/* Floating Badge */}
+              <div className="absolute bottom-6 left-6 right-6 glass-card p-4 rounded-xl flex items-center justify-between">
+                <div>
+                  <p className="text-xs text-slate-400">Asosiy Maqsad</p>
+                  <p className="font-bold text-white">$2000+ Daromad</p>
+                </div>
+                <div className="bg-green-500 text-white font-bold text-xs px-2 py-1 rounded">
+                  KAFOLAT
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>

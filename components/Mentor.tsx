@@ -29,26 +29,16 @@ const Mentor = () => {
                             </div>
                         </div>
 
-                        <div className="relative z-10 grid grid-cols-2 gap-4">
-                            <div className="aspect-[3/4] rounded-[2rem] overflow-hidden bg-slate-200 shadow-2xl transform translate-y-8">
-                                <img
-                                    src="/images/WOXA9679.jpg"
-                                    alt="Mentor 1"
-                                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
-                                />
-                            </div>
-                            <div className="aspect-[3/4] rounded-[2rem] overflow-hidden bg-slate-200 shadow-2xl -translate-y-8">
-                                <img
-                                    src="/images/WOXA9752.jpg"
-                                    alt="Mentor 2"
-                                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
-                                />
-                            </div>
-
-                            <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6 text-white rounded-[2rem] pointer-events-none">
-                                <h3 className="text-2xl font-bold mb-1">Market Pro Asoschisi</h3>
-                                <p className="text-yellow-400 font-bold text-base flex items-center gap-2">
-                                    <CheckCircle className="w-4 h-4" /> 6 yillik tajriba
+                        <div className="aspect-[4/5] rounded-[2rem] overflow-hidden bg-slate-200 shadow-2xl relative z-10">
+                            <img
+                                src="/images/WOXA9986.jpg"
+                                alt="Mentor"
+                                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                            />
+                            <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/90 via-black/50 to-transparent p-8 text-white pt-24">
+                                <h3 className="text-3xl font-bold mb-1">Market Pro Asoschisi</h3>
+                                <p className="text-yellow-400 font-bold text-lg flex items-center gap-2">
+                                    <CheckCircle className="w-5 h-5" /> 6 yillik tajriba
                                 </p>
                             </div>
                         </div>
@@ -91,7 +81,7 @@ const Mentor = () => {
                         </div>
 
                         <button
-                            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'auto' })}
                             className="bg-brand-dark text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-800 transition-all shadow-xl hover:shadow-2xl w-full sm:w-auto"
                         >
                             Mentor bilan gaplashish

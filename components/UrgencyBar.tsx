@@ -30,7 +30,7 @@ const UrgencyBar = () => {
     e.preventDefault();
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: 'auto' });
     }
   };
 
@@ -38,7 +38,7 @@ const UrgencyBar = () => {
 
   return (
     <AnimatePresence>
-      <motion.div 
+      <motion.div
         initial={{ y: 100 }}
         animate={{ y: 0 }}
         exit={{ y: 100 }}
@@ -65,8 +65,8 @@ const UrgencyBar = () => {
               <span>{String(timeLeft.minutes).padStart(2, '0')}</span>:
               <span>{String(timeLeft.seconds).padStart(2, '0')}</span>
             </div>
-            <a 
-              href="#contact" 
+            <a
+              href="#contact"
               onClick={(e) => handleScroll(e, 'contact')}
               className="flex-1 sm:flex-none text-center bg-white text-red-700 hover:bg-slate-100 font-extrabold py-2 px-6 rounded-lg text-sm uppercase tracking-wider transition-colors cursor-pointer"
             >
