@@ -31,8 +31,8 @@ const Pricing = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
               className={`relative flex flex-col p-8 rounded-[2rem] h-full transition-transform duration-300 ${plan.highlight
-                  ? 'bg-gradient-to-b from-blue-900/80 to-[#020617] border-2 border-blue-500 shadow-[0_0_60px_rgba(37,99,235,0.25)] z-10 scale-105 lg:scale-110 lg:-mt-4 min-h-[600px]'
-                  : 'bg-white/5 border border-white/5 hover:border-white/10 hover:bg-white/[0.07] min-h-[500px]'
+                ? 'bg-gradient-to-b from-blue-900/80 to-[#020617] border-2 border-blue-500 shadow-[0_0_60px_rgba(37,99,235,0.25)] z-10 scale-105 lg:scale-110 lg:-mt-4 min-h-[600px]'
+                : 'bg-white/5 border border-white/5 hover:border-white/10 hover:bg-white/[0.07] min-h-[500px]'
                 }`}
             >
               {plan.highlight && (
@@ -53,7 +53,7 @@ const Pricing = () => {
                 <div className="pb-6 border-b border-white/10">
                   {/* Fake Old Price for psychological effect */}
                   <div className="text-sm text-slate-500 line-through mb-1">
-                    Asl qiymati: {index === 1 ? '$2000' : index === 2 ? '$25,000' : '$5000'}
+                    Asl qiymati: {index === 0 ? '$2000' : index === 1 ? '$3500' : '$25,000'}
                   </div>
                   <div className="flex items-end gap-2 justify-center lg:justify-start">
                     <span className={`font-extrabold tracking-tight ${plan.highlight ? 'text-blue-400 text-6xl' : 'text-white text-5xl'}`}>{plan.price}</span>
@@ -74,7 +74,7 @@ const Pricing = () => {
                 <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-4">Nimalar kiritilgan:</p>
                 <ul className="space-y-4">
                   {/* Special Feature for Mentoring/Service Plans */}
-                  {(index === 0 || index === 2) && (
+                  {(index === 1 || index === 2) && (
                     <li className="flex items-start gap-3 bg-green-500/10 p-2 rounded-lg border border-green-500/20">
                       <div className="p-1 rounded-full flex-shrink-0 bg-green-500/20 text-green-400">
                         <Briefcase className="w-3 h-3" />
@@ -91,7 +91,7 @@ const Pricing = () => {
                         <Sparkles className="w-3 h-3" />
                       </div>
                       <span className="text-blue-200 text-sm font-bold leading-relaxed">
-                        To'liq "Kalit topshirish" (Done-for-you)
+                        Tezkor start va natija
                       </span>
                     </li>
                   )}
@@ -123,8 +123,8 @@ const Pricing = () => {
                 href="#contact"
                 onClick={(e) => handleScroll(e, 'contact')}
                 className={`w-full py-5 px-6 rounded-xl font-bold text-center transition-all mt-auto flex items-center justify-center gap-2 group cursor-pointer ${plan.highlight
-                    ? 'bg-blue-600 hover:bg-blue-500 text-white shadow-[0_0_30px_rgba(37,99,235,0.4)] hover:shadow-[0_0_50px_rgba(37,99,235,0.6)] transform hover:-translate-y-1'
-                    : 'bg-white text-brand-dark hover:bg-slate-200'
+                  ? 'bg-blue-600 hover:bg-blue-500 text-white shadow-[0_0_30px_rgba(37,99,235,0.4)] hover:shadow-[0_0_50px_rgba(37,99,235,0.6)] transform hover:-translate-y-1'
+                  : 'bg-white text-brand-dark hover:bg-slate-200'
                   }`}
               >
                 Boshlash

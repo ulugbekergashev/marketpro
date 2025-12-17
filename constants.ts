@@ -37,9 +37,9 @@ export const CURRICULUM = [
     title: "Fundamental Tahlil & Strategiya",
     desc: "Bozorni shunchaki ko'rish emas, uni rentgen qilish. 99% sotuvchilar bilmaydigan 'yashirin talab'ni topish va raqobatsiz hududga kirish.",
     details: [
-        "Unit-ekonomika: Foydani oldindan ko'rish",
-        "Raqobatchilarni 'sindirish' strategiyasi",
-        "Xatersiz nishani tanlash formulasi"
+      "Unit-ekonomika: Foydani oldindan ko'rish",
+      "Raqobatchilarni 'sindirish' strategiyasi",
+      "Xatersiz nishani tanlash formulasi"
     ],
     color: "blue"
   },
@@ -48,9 +48,9 @@ export const CURRICULUM = [
     title: "Xitoy & Global Logistika",
     desc: "Mahsulotni tannarxini 30-40% ga tushirish sirlari. Ishonchli fabrikalar bilan to'g'ridan-to'g'ri ishlash va eng arzon logistika zanjirini qurish.",
     details: [
-        "Xitoy fabrikalari bilan muzokaralar",
-        "Logistika zanjirini optimallashtirish",
-        "Bojxona va sertifikatlash masalalari"
+      "Xitoy fabrikalari bilan muzokaralar",
+      "Logistika zanjirini optimallashtirish",
+      "Bojxona va sertifikatlash masalalari"
     ],
     color: "purple"
   },
@@ -59,9 +59,9 @@ export const CURRICULUM = [
     title: "Premium Qadoqlash & Neyromarketing",
     desc: "Mijozni 'sotib olish' tugmasini bosishga majbur qiluvchi vizual va psixologik tryuklar. Oddiy tovardan brend yaratish.",
     details: [
-        "Sotuvchi kontent va infografika",
-        "Mijoz psixologiyasi",
-        "Brending asoslari"
+      "Sotuvchi kontent va infografika",
+      "Mijoz psixologiyasi",
+      "Brending asoslari"
     ],
     color: "pink"
   },
@@ -70,28 +70,15 @@ export const CURRICULUM = [
     title: "Algoritmlar & Masshtab",
     desc: "Sun'iy intellekt yordamida SEO. Reklama byudjetini 'yoqmasdan' TOP-1 ga chiqish strategiyasi va 10x daromadga chiqish.",
     details: [
-        "WB va Ozon qidiruv algoritmlari (SEO)",
-        "Ichki va tashqi reklama",
-        "Savdoni avtomatlashtirish"
+      "WB va Ozon qidiruv algoritmlari (SEO)",
+      "Ichki va tashqi reklama",
+      "Savdoni avtomatlashtirish"
     ],
     color: "orange"
   }
 ];
 
 export const PRICING_PLANS = [
-  {
-    name: "2 Oylik Mentoring",
-    price: "$3000",
-    period: "",
-    subtitle: "Tezkor start uchun",
-    features: [
-      "2 oy davomida qo'llab-quvvatlash",
-      "Biznes jarayonlarini yo'lga qo'yish",
-      "Xatarlarni kamaytirish",
-      "Jamoani shakllantirish yordami"
-    ],
-    highlight: false
-  },
   {
     name: "Kompleks kuzatuv",
     price: "$1000",
@@ -103,6 +90,19 @@ export const PRICING_PLANS = [
       "Do'konni to'liq boshqarish",
       "Muntazam hisobotlar",
       "Reklama strategiyasi"
+    ],
+    highlight: false
+  },
+  {
+    name: "1 Oylik Mentoring",
+    price: "$2000",
+    period: "",
+    subtitle: "Tezkor start uchun",
+    features: [
+      "1 oy davomida qo'llab-quvvatlash",
+      "Biznes jarayonlarini yo'lga qo'yish",
+      "Xatarlarni kamaytirish",
+      "Jamoani shakllantirish yordami"
     ],
     highlight: true
   },
