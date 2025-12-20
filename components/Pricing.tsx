@@ -16,23 +16,23 @@ const Pricing = () => {
     <section id="pricing" className="py-24 bg-[#0B0F19]">
       <div className="container mx-auto px-6">
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Hamkorlik Paketlari</h2>
-          <p className="text-slate-400 max-w-xl mx-auto">
-            Qimmat? Yo'q. Arzon mutaxassis bilan vaqt yo'qotish — mana bu qimmat.
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Kurs Paketlari</h2>
+          <p className="text-slate-400 max-w-2xl mx-auto">
+            Noldan professional darajagacha. O'zingizga mos paketni tanlang va marketpleyslar olamida muvaffaqiyatga erishing!
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 max-w-6xl mx-auto">
           {PRICING_PLANS.map((plan, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
-              className={`relative flex flex-col p-8 rounded-[2rem] h-full transition-transform duration-300 ${plan.highlight
-                ? 'bg-gradient-to-b from-blue-900/80 to-[#020617] border-2 border-blue-500 shadow-[0_0_60px_rgba(37,99,235,0.25)] z-10 scale-105 lg:scale-110 lg:-mt-4 min-h-[600px]'
-                : 'bg-white/5 border border-white/5 hover:border-white/10 hover:bg-white/[0.07] min-h-[500px]'
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className={`relative flex flex-col p-6 md:p-8 rounded-[2rem] h-full transition-transform duration-300 ${plan.highlight
+                ? 'bg-gradient-to-b from-blue-900/80 to-[#020617] border-2 border-blue-500 shadow-[0_0_60px_rgba(37,99,235,0.25)] z-10 scale-[1.02]'
+                : 'bg-white/5 border border-white/5 hover:border-white/10 hover:bg-white/[0.07]'
                 }`}
             >
               {plan.highlight && (
@@ -45,25 +45,30 @@ const Pricing = () => {
                 <h3 className={`text-2xl font-bold mb-2 ${plan.highlight ? 'text-white text-3xl' : 'text-slate-200'}`}>
                   {plan.name}
                 </h3>
-                <p className="text-sm text-slate-400 mb-6 min-h-[20px]">
+                <p className="text-sm text-slate-400 mb-2 min-h-[20px]">
                   {plan.subtitle}
                 </p>
+                {(plan as any).duration && (
+                  <p className="text-xs text-blue-300 font-semibold mb-4">
+                    📅 {(plan as any).duration}
+                  </p>
+                )}
 
                 {/* Price Display */}
                 <div className="pb-6 border-b border-white/10">
                   {/* Fake Old Price for psychological effect */}
                   <div className="text-sm text-slate-500 line-through mb-1">
-                    Asl qiymati: {index === 0 ? '$2000' : index === 1 ? '$3500' : '$25,000'}
+                    Asl qiymati: {index === 0 ? '$1500' : index === 1 ? '$3000' : index === 2 ? '$4500' : '$6000'}
                   </div>
                   <div className="flex items-end gap-2 justify-center lg:justify-start">
-                    <span className={`font-extrabold tracking-tight ${plan.highlight ? 'text-blue-400 text-6xl' : 'text-white text-5xl'}`}>{plan.price}</span>
+                    <span className={`font-extrabold tracking-tight ${plan.highlight ? 'text-blue-400 text-5xl md:text-6xl' : 'text-white text-4xl md:text-5xl'}`}>{plan.price}</span>
                     <span className="text-slate-500 mb-2 font-medium">
                       {plan.period}
                     </span>
                   </div>
-                  {plan.oldPrice && (
+                  {(plan as any).oldPrice && (
                     <div className="text-red-400 text-sm font-bold mt-2 animate-pulse">
-                      Faqat bugun: {plan.oldPrice} dan chegirma!
+                      Faqat bugun: {(plan as any).oldPrice} dan chegirma!
                     </div>
                   )}
                 </div>
@@ -72,30 +77,7 @@ const Pricing = () => {
               {/* Value Stack */}
               <div className="mb-8 flex-1">
                 <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-4">Nimalar kiritilgan:</p>
-                <ul className="space-y-4">
-                  {/* Special Feature for Mentoring/Service Plans */}
-                  {(index === 1 || index === 2) && (
-                    <li className="flex items-start gap-3 bg-green-500/10 p-2 rounded-lg border border-green-500/20">
-                      <div className="p-1 rounded-full flex-shrink-0 bg-green-500/20 text-green-400">
-                        <Briefcase className="w-3 h-3" />
-                      </div>
-                      <span className="text-green-300 text-sm font-bold leading-relaxed">
-                        Kafolatlangan ish ($1000+)
-                      </span>
-                    </li>
-                  )}
-                  {/* For the main service plan */}
-                  {index === 1 && (
-                    <li className="flex items-start gap-3 bg-blue-500/10 p-2 rounded-lg border border-blue-500/20 shadow-[0_0_15px_rgba(59,130,246,0.2)]">
-                      <div className="p-1 rounded-full flex-shrink-0 bg-blue-500/20 text-blue-400">
-                        <Sparkles className="w-3 h-3" />
-                      </div>
-                      <span className="text-blue-200 text-sm font-bold leading-relaxed">
-                        Tezkor start va natija
-                      </span>
-                    </li>
-                  )}
-
+                <ul className="space-y-3">
                   {plan.features.map((feature, i) => (
                     <li key={i} className="flex items-start gap-3">
                       <div className={`p-1 rounded-full flex-shrink-0 ${plan.highlight ? 'bg-blue-500/20 text-blue-400' : 'bg-white/10 text-white'}`}>

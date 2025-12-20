@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from './components/Header';
 import Hero from './components/Hero';
 import Stats from './components/Stats';
 import MarketOpportunity from './components/MarketOpportunity';
@@ -18,17 +17,16 @@ import UrgencyBar from './components/UrgencyBar';
 function App() {
   return (
     <div className="min-h-screen bg-brand-dark relative selection:bg-brand-blue selection:text-white overflow-x-hidden">
-      <Header />
-      
+
       <main>
         {/* Stage 1: Hook & Promise */}
         <Hero />
         <Stats />
-        
+
         {/* Stage 2: Problem & Agitation */}
         <PainPoints />
         <MarketOpportunity />
-        
+
         {/* Stage 3: Why Us & Authority */}
         <WhyUs />
         <Mentor />
@@ -36,12 +34,12 @@ function App() {
         {/* Stage 4: Solution & Methodology */}
         <Curriculum />
         <JobGuarantee />
-        
+
         {/* Stage 5: Proof & Offer */}
         <Testimonials />
         <Pricing />
         <FAQ />
-        
+
         {/* Stage 6: Action */}
         <Contact />
       </main>

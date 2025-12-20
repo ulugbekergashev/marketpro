@@ -80,44 +80,78 @@ export const CURRICULUM = [
 
 export const PRICING_PLANS = [
   {
-    name: "Kompleks kuzatuv",
-    price: "$1000",
-    period: "/ oy",
-    subtitle: "+ aylanmadan 2% KPI",
+    name: "Standart",
+    price: "$999",
+    period: "",
+    duration: "1 oy + 1 oy texnik yordam",
+    subtitle: "UZUM bilan ishga tushirish",
     features: [
-      "Uzoq muddatli hamkorlik",
-      "Shartnoma asosida",
-      "Do'konni to'liq boshqarish",
-      "Muntazam hisobotlar",
-      "Reklama strategiyasi"
+      "UZUM platformasida ishlash",
+      "Shartnoma tuzish va tovar tanlash",
+      "Mahsulot kartochkalarini yaratish",
+      "Assortiment tahlili va optimizatsiya",
+      "Logistika turlari (FBS, FBO, DBS)",
+      "Reklama sozlash bo'yicha qo'llanma",
+      "Ijobiy sharhlar strategiyasi",
+      "Xitoydan to'g'ridan-to'g'ri xaridlar",
+      "MPstats - 1 oy bepul kirish",
+      "Kurs oxirida sertifikat"
     ],
     highlight: false
   },
   {
-    name: "1 Oylik Mentoring",
-    price: "$2000",
+    name: "Standart Plus",
+    price: "$1999",
     period: "",
-    subtitle: "Tezkor start uchun",
+    duration: "1 oy + 1 oy texnik yordam",
+    subtitle: "Ko'p platformali start",
     features: [
-      "1 oy davomida qo'llab-quvvatlash",
-      "Biznes jarayonlarini yo'lga qo'yish",
-      "Xatarlarni kamaytirish",
-      "Jamoani shakllantirish yordami"
+      "Barcha Standart paket imkoniyatlari",
+      "Uzum, Ozon, Wildberries, Yandex Market",
+      "Tovar xarid byudjeti: $1000-$1500",
+      "Haftada 2 marta 2 soatlik darslar",
+      "MPstats - 1 oy bepul kirish",
+      "Kurs oxirida sertifikat"
     ],
     highlight: true
   },
   {
-    name: "Yillik Mentoring (VIP)",
-    price: "$10,000",
-    oldPrice: "$18,000",
-    period: "/ yil",
-    subtitle: "Shaxsiy mentor - Bosh direktor",
+    name: "Biznes",
+    price: "$2999",
+    period: "",
+    duration: "2 oy + 2 oy texnik yordam",
+    subtitle: "Xalqaro darajaga chiqish",
     features: [
-      "12 oylik uzoq muddatli strategiya",
-      "Bosh direktor bilan sessiyalar",
-      "KPI doimiy nazorati",
-      "Jamoani o'qitish va tizimlashtirish",
-      "Biznesni avtonom holatga keltirish"
+      "Standart va Standart Plus imkoniyatlari",
+      "Shaxsiy kurator bilan ishlash",
+      "Chuqur platformalar va strategiyalar",
+      "Xitoy va Turkiyaga amaliy sayohatlar",
+      "Biznes nonushta va kechki ovqatlar",
+      "Biznes-forumlarda qatnashish",
+      "Xitoydan to'g'ridan-to'g'ri buyurtmalar",
+      "MPstats - 3 oy bepul kirish",
+      "Haftada 3 marta 2 soatlik darslar",
+      "Kurs oxirida sertifikat"
+    ],
+    highlight: false
+  },
+  {
+    name: "VIP",
+    price: "$3999",
+    period: "",
+    duration: "3 oy + 3 oy texnik yordam",
+    subtitle: "Maksimal bilim va imkoniyatlar",
+    features: [
+      "Barcha paketlarning imkoniyatlari",
+      "4 oylik bepul ta'lim kirish",
+      "Yirik bozorlarga eksklyuziv sayohatlar",
+      "Ekspertlar bilan biznes-rejalar ishlab chiqish",
+      "Biznes nonushta va kechki ovqatlar",
+      "Yirik forumlarda qatnashish",
+      "Xitoydan to'g'ridan-to'g'ri buyurtmalar",
+      "Haftada 3 marta 2 soatlik darslar",
+      "MPstats - 4 oy bepul kirish",
+      "Professionallikni tasdiqlovchi sertifikat"
     ],
     highlight: false
   }
@@ -152,65 +186,71 @@ export const TESTIMONIALS = [
 
 export const FAQ_ITEMS = [
   {
-    question: "Natija bo'lmasa pul qaytariladimi?",
-    answer: "Ha, biz shartnomada KPI ko'rsatkichlarini belgilaymiz. Agar bizning aybimiz bilan belgilangan natijaga erishilmasa, biz kafolat majburiyatlarini bajaramiz."
+    question: "Qaysi paket menga mos keladi?",
+    answer: "Agar siz yangi boshlovchi bo'lsangiz va bitta platformada (UZUM) ishlashni xohlasangiz - Standart paket. Ko'p platformalarda ishlashni istasangiz - Standart Plus. Xalqaro tajriba va networking kerak bo'lsa - Biznes yoki VIP paketlarni tanlang."
   },
   {
-    question: "Haqiqatan ham $1000 lik ish topib berasizmi?",
-    answer: "Ha, bu bizning rasmiy kafolatimiz. Kursni muvaffaqiyatli tamomlab, imtihondan o'tgan har bir o'quvchini hamkor kompaniyalarimizga menejer yoki marketolog sifatida joylashtiramiz."
+    question: "Kursni tugatgandan keyin haqiqatan ham ish topib berasizmi?",
+    answer: "Ha, bu bizning rasmiy kafolatimiz. Kursni muvaffaqiyatli tamomlab, imtihondan o'tgan har bir o'quvchini hamkor kompaniyalarimizga menejer yoki marketolog sifatida joylashtiramiz. Minimal maosh $1000 dan boshlanadi."
   },
   {
     question: "Men noldan boshlamoqchiman, menga to'g'ri keladimi?",
-    answer: "Albatta. '2 Oylik Mentoring' paketi aynan yangi boshlovchilar uchun moslashgan. Biz sizga mahsulot tanlashdan tortib birinchi sotuvgacha yordam beramiz."
+    answer: "Albatta! Barcha paketlar yangi boshlovchilar uchun moslashgan. Biz sizga mahsulot tanlashdan tortib birinchi sotuvgacha qadam-baqadam yo'l ko'rsatamiz. Standart paket aynan yangi boshlovchilar uchun yaratilgan."
   },
   {
-    question: "Sizning xizmat haqingiz qimmat emasmi?",
-    answer: "Bozorda arzon mutaxassislar ko'p, lekin ular ko'pincha sizning byudjetingizni yoqib yuborishadi. Bizning narxlarimiz tajriba va kafolatlangan natijaga asoslangan. Bitta to'g'ri tanlangan tovar sizga bu pulni 1 oyda qaytarib berishi mumkin."
+    question: "Texnik yordam nima beradi?",
+    answer: "Texnik yordam davomida siz o'qituvchilardan savollar berishingiz, muammolaringizni hal qilishingiz va qo'shimcha maslahatlar olishingiz mumkin. Bu sizning bilimlaringizni mustahkamlash va amaliyotda qo'llash uchun juda muhim."
   },
   {
-    question: "Jarayon qancha vaqt oladi?",
-    answer: "O'rtacha hisobda do'konni noldan ishga tushirish va birinchi sotuvlarni olish uchun 15-20 kun ketadi. Top savdoga chiqish uchun 2-3 oy talab qilinishi mumkin."
+    question: "MPstats nima va nega kerak?",
+    answer: "MPstats - bu marketpleyslar uchun eng kuchli analitika vositasi. U orqali raqobatchilarni tahlil qilish, eng yaxshi tovarlarni topish va o'z mahsulotlaringizni optimallashtirishingiz mumkin. Biz sizga bu xizmatni bepul taqdim etamiz."
+  },
+  {
+    question: "Xitoydan tovar buyurtma qilishda yordam berasizmi?",
+    answer: "Ha, barcha paketlarda Xitoydan to'g'ridan-to'g'ri xaridlar bo'yicha yordam mavjud. Biz sizga ishonchli fabrikalar, transport kompaniyalari va bojxona rasmiylashtirish bo'yicha to'liq qo'llab-quvvatlash beramiz."
   }
 ];
 
 export const STATS = [
   { label: "Muallif Oboroti", value: "$100M+" },
   { label: "Kafolat", value: "$1000+" },
-  { label: "Mijozlar (RF)", value: "300+" },
+  { label: "Mijozlar (RF)", value: "400+" },
   { label: "O'sish (6 oyda)", value: "61%" },
 ];
 
 export const SYSTEM_INSTRUCTION = `
 Siz Market Pro Academy kompaniyasining sun'iy intellekt asosidagi yordamchisisiz.
-Sizning vazifangiz mijozlarga kompaniya xizmatlari, narxlari va afzalliklari haqida ma'lumot berishdir.
+Sizning vazifangiz mijozlarga kompaniya kurslari, paketlari va afzalliklari haqida ma'lumot berishdir.
 Quyidagi ma'lumotlardan foydalaning:
 
 Kompaniya haqida:
-Market Pro Academy - marketpleyslarda savdo qilishni o'rgatuvchi va xizmat ko'rsatuvchi kompaniya. 6 yillik tajriba. 300+ mijoz. 50+ xodim. Ofislar Toshkent, Samarqand va Moskvada.
+Market Pro Academy - marketpleyslarda savdo qilishni o'rgatuvchi ta'lim kompaniyasi. 6 yillik tajriba. 400+ mijoz. 50+ xodim. Ofislar Toshkent, Samarqand va Moskvada.
 Kurs muallifi va asoschi yillik aylanmasi $100 Million dollardan oshadi.
 
 ASOSIY TAKLIF (KILLER OFFER):
-Biz kursni muvaffaqiyatli bitirgan har bir o'quvchiga $1000 maoshli ish topib berishga KAFOLAT beramiz.
+Biz kursni muvaffaqiyatli bitirgan har bir o'quvchiga $1000+ maoshli ish topib berishga KAFOLAT beramiz.
 
-Xizmatlar:
-- Do'kon yaratish va sozlash
-- SEO optimizatsiya
-- Raqobatchilar tahlili
-- Reklama va targ'ibot
-- Logistika va ombor
-- Texnik yordam
+Kurs Paketlari:
+1. Standart ($999): 1 oy + 1 oy texnik yordam. UZUM platformasida ishlash, shartnoma, tovar tanlash, kartochkalar yaratish, logistika, reklama, Xitoydan xaridlar. MPstats 1 oy bepul.
 
-Tariflar:
-1. Kompleks kuzatuv (Eng ommabop): $1000/oy + 2% KPI.
-2. 2 oylik mentoring: $3000.
-3. Yillik Mentoring (VIP): $10,000. Bosh direktor shaxsan shug'ullanadi.
+2. Standart Plus ($1999) - ENG OMMABOP: 1 oy + 1 oy texnik yordam. Uzum, Ozon, Wildberries, Yandex Market. Tovar xarid byudjeti $1000-$1500. Haftada 2x2 soat darslar. MPstats 1 oy bepul.
+
+3. Biznes ($2999): 2 oy + 2 oy texnik yordam. Shaxsiy kurator. Xitoy va Turkiyaga sayohatlar. Biznes nonushta/kechki ovqatlar. Forumlarda qatnashish. Haftada 3x2 soat. MPstats 3 oy bepul.
+
+4. VIP ($3999): 3 oy + 3 oy texnik yordam. 4 oylik bepul ta'lim. Eksklyuziv sayohatlar. Ekspertlar bilan biznes-rejalar. Yirik forumlarda qatnashish. Haftada 3x2 soat. MPstats 4 oy bepul.
+
+Barcha paketlarda:
+- Kurs oxirida rasmiy sertifikat
+- Xitoydan to'g'ridan-to'g'ri xaridlar bo'yicha yordam
+- Kafolatlangan ish joylashtiruvi ($1000+ maosh)
 
 Natijalar:
-- 15 kunda TOPga chiqish kafolati.
-- O'rtacha mijoz 6 oyda 61% o'sadi.
-- 92% mijozlar qaytib keladi.
+- Kursni tugatganlarning 95%i ish topadi
+- O'rtacha ish haqi $1000-$2000
+- Eng yaxshi o'quvchilar $3000+ daromad qilishadi
 
 Muloqot uslubi:
 Do'stona, professional, o'zbek tilida (lotin yozuvida). Qisqa va aniq javob bering.
 Sotuvga undashga harakat qiling (Call to action).
+Paketlar orasidagi farqlarni tushuntirib bering.
 `;
