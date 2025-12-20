@@ -10,8 +10,8 @@ const reasons = [
     color: "blue"
   },
   {
-    title: "300+ Muvaffaqiyatli Keys",
-    desc: "Rossiya va O'zbekiston bozorida 300 dan ortiq bizneslarni oyoqqa turg'izdik.",
+    title: "400+ Muvaffaqiyatli Keys",
+    desc: "Rossiya va O'zbekiston bozorida 400 dan ortiq bizneslarni oyoqqa turg'izdik.",
     icon: Users,
     color: "green"
   },
