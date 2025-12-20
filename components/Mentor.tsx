@@ -64,7 +64,7 @@ const Mentor = () => {
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div className="flex items-center gap-3 bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-blue-500 transition-colors">
                                 <CheckCircle className="w-6 h-6 text-brand-blue" />
-                                <span className="font-bold">Rossiyada 300+ proyekt</span>
+                                <span className="font-bold">Rossiyada 400+ proyekt</span>
                             </div>
                             <div className="flex items-center gap-3 bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-blue-500 transition-colors">
                                 <CheckCircle className="w-6 h-6 text-brand-blue" />
