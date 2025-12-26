@@ -60,13 +60,30 @@ const Contact = () => {
                   <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
                     <Phone className="w-5 h-5" />
                   </div>
-                  <span className="font-bold text-xl">+998 (90) 123-45-67</span>
+                  <span className="font-bold text-xl">+998 97 124 76 97</span>
                 </div>
-                <div className="flex items-center gap-4 text-blue-100">
-                  <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
+                <div className="flex items-start gap-4 text-blue-100">
+                  <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
                     <MapPin className="w-5 h-5" />
                   </div>
-                  <span className="font-medium">Toshkent, Samarqand, Moskva</span>
+                  <div className="space-y-3 font-medium">
+                    <div className="flex items-center gap-2">
+                      <img src="https://flagcdn.com/w40/uz.png" alt="Uzbekistan" className="w-5 h-auto rounded-sm shadow-sm" />
+                      <span>Samarqand: Ibn Sina 7</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <img src="https://flagcdn.com/w40/uz.png" alt="Uzbekistan" className="w-5 h-auto rounded-sm shadow-sm" />
+                      <span>Toshkent: Sergeli 7 82</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <img src="https://flagcdn.com/w40/ru.png" alt="Russia" className="w-5 h-auto rounded-sm shadow-sm" />
+                      <span>Moskva: Montajnaya 7s8</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <img src="https://flagcdn.com/w40/ru.png" alt="Russia" className="w-5 h-auto rounded-sm shadow-sm" />
+                      <span>Moskva: TC Krona, Kronshtadtskiy bulvar 7s3</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -109,7 +126,7 @@ const Contact = () => {
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       className="w-full px-4 py-4 rounded-xl bg-slate-50 border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all font-medium disabled:opacity-50 disabled:cursor-not-allowed"
-                      placeholder="+998 90 123 45 67"
+                      placeholder="+998 97 124 76 97"
                     />
                   </div>
                   <button

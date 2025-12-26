@@ -1,24 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { TESTIMONIALS } from '../constants';
-import { Quote, Star, ArrowUpRight } from 'lucide-react';
+import { Quote, Star, ArrowUpRight, TrendingUp } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { generateTestimonialImages } from '../services/geminiService';
 
 const Testimonials = () => {
-  const [images, setImages] = useState<string[]>([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const loadImages = async () => {
-        if (process.env.API_KEY) {
-            const imgs = await generateTestimonialImages();
-            setImages(imgs);
-        }
-        setLoading(false);
-    }
-    loadImages();
-  }, []);
-
   return (
     <section id="results" className="py-24 bg-brand-dark relative overflow-hidden">
       {/* Background Gradients */}
@@ -26,13 +11,13 @@ const Testimonials = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-             <span className="text-blue-500 font-bold tracking-wider uppercase text-sm mb-2 block">Real Keyslar</span>
-             <h2 className="text-4xl md:text-6xl font-extrabold text-white mb-6">
-                Biz gapirmaymiz, <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">biz isbotlaymiz</span>
-             </h2>
-             <p className="text-slate-400 max-w-2xl mx-auto text-lg">
-                Har bir raqam ortida – mashaqqatli mehnat va to'g'ri strategiya yotibdi.
-             </p>
+          <span className="text-blue-500 font-bold tracking-wider uppercase text-sm mb-2 block">Real Keyslar</span>
+          <h2 className="text-4xl md:text-6xl font-extrabold text-white mb-6">
+            Biz gapirmaymiz, <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">biz isbotlaymiz</span>
+          </h2>
+          <p className="text-slate-400 max-w-2xl mx-auto text-lg">
+            Har bir raqam ortida – mashaqqatli mehnat va to'g'ri strategiya yotibdi.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -43,50 +28,47 @@ const Testimonials = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
-              className="bg-[#0F1623] rounded-3xl border border-white/5 overflow-hidden group hover:border-blue-500/30 transition-all duration-500 hover:shadow-[0_0_30px_rgba(37,99,235,0.1)] flex flex-col h-full"
+              className="bg-gradient-to-br from-[#0F1623] to-[#1a2332] rounded-3xl border border-white/10 overflow-hidden group hover:border-blue-500/40 transition-all duration-500 hover:shadow-[0_0_40px_rgba(37,99,235,0.15)] flex flex-col h-full relative"
             >
-              {/* Card Header with Image */}
-              <div className="p-6 pb-0 flex items-center gap-4">
-                 <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-blue-500 p-0.5">
-                    {loading ? (
-                        <div className="w-full h-full bg-slate-800 animate-pulse rounded-full"></div>
-                    ) : (
-                        <img 
-                            src={images[index] || "https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=800&auto=format&fit=crop"} 
-                            alt={item.name} 
-                            className="w-full h-full object-cover rounded-full bg-slate-800"
-                        />
-                    )}
-                 </div>
-                 <div>
-                    <h4 className="font-bold text-lg text-white leading-tight">{item.name}</h4>
-                    <p className="text-xs text-slate-400 uppercase tracking-wide">{item.role}</p>
-                 </div>
-              </div>
+              {/* Gradient Accent */}
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-full blur-3xl"></div>
 
-              <div className="p-8 pt-6 flex flex-col flex-1">
-                 {/* Main Stat */}
-                 <div className="mb-6 bg-white/5 p-4 rounded-2xl border border-white/5">
-                    <div className="flex justify-between items-end mb-1">
-                        <span className="text-slate-400 text-sm">Natija:</span>
-                        <ArrowUpRight className="w-5 h-5 text-green-500" />
+              <div className="p-8 flex flex-col flex-1 relative z-10">
+                {/* Header */}
+                <div className="mb-6">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center">
+                      <TrendingUp className="w-6 h-6 text-white" />
                     </div>
-                    <div className="text-4xl font-extrabold text-white mb-1">{item.result}</div>
-                    <div className="text-sm font-medium text-blue-400">{item.revenue}</div>
-                 </div>
+                    <div>
+                      <h4 className="font-bold text-xl text-white leading-tight">{item.name}</h4>
+                      <p className="text-sm text-blue-400 font-medium">{item.role}</p>
+                    </div>
+                  </div>
+                </div>
 
-                 <p className="text-slate-400 text-sm leading-relaxed mb-6 flex-1 italic relative">
-                    <Quote className="absolute -top-2 -left-2 w-6 h-6 text-white/5 transform -scale-x-100" />
-                    "{item.desc}"
-                 </p>
+                {/* Main Stat */}
+                <div className="mb-6 bg-gradient-to-br from-blue-500/10 to-purple-500/10 p-6 rounded-2xl border border-blue-500/20">
+                  <div className="flex justify-between items-end mb-2">
+                    <span className="text-slate-400 text-sm font-semibold uppercase tracking-wider">Natija</span>
+                    <ArrowUpRight className="w-6 h-6 text-green-400" />
+                  </div>
+                  <div className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mb-2">{item.result}</div>
+                  <div className="text-base font-bold text-white">{item.revenue}</div>
+                </div>
 
-                 <div className="flex items-center gap-1 text-yellow-500">
-                    <Star className="w-4 h-4 fill-current" />
-                    <Star className="w-4 h-4 fill-current" />
-                    <Star className="w-4 h-4 fill-current" />
-                    <Star className="w-4 h-4 fill-current" />
-                    <Star className="w-4 h-4 fill-current" />
-                 </div>
+                <p className="text-slate-300 text-base leading-relaxed mb-6 flex-1 relative pl-6">
+                  <Quote className="absolute top-0 left-0 w-5 h-5 text-blue-500/30" />
+                  {item.desc}
+                </p>
+
+                <div className="flex items-center gap-1 text-yellow-400">
+                  <Star className="w-5 h-5 fill-current" />
+                  <Star className="w-5 h-5 fill-current" />
+                  <Star className="w-5 h-5 fill-current" />
+                  <Star className="w-5 h-5 fill-current" />
+                  <Star className="w-5 h-5 fill-current" />
+                </div>
               </div>
             </motion.div>
           ))}
