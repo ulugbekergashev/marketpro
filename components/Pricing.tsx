@@ -22,7 +22,7 @@ const Pricing = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {PRICING_PLANS.map((plan, index) => (
             <motion.div
               key={index}
@@ -56,10 +56,11 @@ const Pricing = () => {
 
                 {/* Price Display */}
                 <div className="pb-6 border-b border-white/10">
-                  {/* Fake Old Price for psychological effect */}
-                  <div className="text-sm text-slate-500 line-through mb-1">
-                    Asl qiymati: {index === 0 ? '$1500' : index === 1 ? '$3000' : index === 2 ? '$4500' : '$6000'}
-                  </div>
+                  {(plan as any).oldPrice && (
+                    <div className="text-sm text-slate-500 line-through mb-1">
+                      Asl qiymati: {(plan as any).oldPrice}
+                    </div>
+                  )}
                   <div className="flex items-end gap-2 justify-center lg:justify-start">
                     <span className={`font-extrabold tracking-tight ${plan.highlight ? 'text-blue-400 text-5xl md:text-6xl' : 'text-white text-4xl md:text-5xl'}`}>{plan.price}</span>
                     <span className="text-slate-500 mb-2 font-medium">
@@ -67,8 +68,8 @@ const Pricing = () => {
                     </span>
                   </div>
                   {(plan as any).oldPrice && (
-                    <div className="text-red-400 text-sm font-bold mt-2 animate-pulse">
-                      Faqat bugun: {(plan as any).oldPrice} dan chegirma!
+                    <div className="text-green-400 text-sm font-bold mt-2">
+                      Chegirma: {(plan as any).oldPrice} dan!
                     </div>
                   )}
                 </div>

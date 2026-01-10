@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 
 const reasons = [
   {
-    title: "6 Yillik Tajriba",
-    desc: "Biz kecha paydo bo'lgan kurs emasmiz. 6 yildan beri e-commerce bozoridamiz.",
+    title: "7 Yillik Tajriba",
+    desc: "Biz kecha paydo bo'lgan kurs emasmiz. 7 yildan beri e-commerce bozoridamiz.",
     icon: Award,
     color: "blue"
   },

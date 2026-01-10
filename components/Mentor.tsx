@@ -25,7 +25,7 @@ const Mentor = () => {
                         <div className="absolute top-8 -right-4 z-20 bg-gradient-to-r from-yellow-500 to-amber-600 text-white p-4 rounded-l-xl shadow-xl transform group-hover:scale-105 transition-transform">
                             <div className="text-xs uppercase font-bold tracking-wider opacity-90">Yillik aylanma</div>
                             <div className="text-3xl font-extrabold flex items-center gap-1">
-                                $100,000,000 <TrendingUp className="w-6 h-6" />
+                                $130,000,000 <TrendingUp className="w-6 h-6" />
                             </div>
                         </div>
 
@@ -38,7 +38,7 @@ const Mentor = () => {
                             <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/90 via-black/50 to-transparent p-8 text-white pt-24">
                                 <h3 className="text-3xl font-bold mb-1">Market Pro Asoschisi</h3>
                                 <p className="text-yellow-400 font-bold text-lg flex items-center gap-2">
-                                    <CheckCircle className="w-5 h-5" /> 6 yillik tajriba
+                                    <CheckCircle className="w-5 h-5" /> 7 yillik tajriba
                                 </p>
                             </div>
                         </div>
@@ -51,13 +51,13 @@ const Mentor = () => {
                             TOP EKSPERT
                         </div>
                         <h2 className="text-4xl lg:text-5xl font-extrabold leading-tight text-slate-900">
-                            "$100mln lik natija <br /> <span className="text-brand-blue">tasodif emas."</span>
+                            "$130mln lik natija <br /> <span className="text-brand-blue">tasodif emas."</span>
                         </h2>
 
                         <div className="relative pl-8 border-l-4 border-brand-accent">
                             <Quote className="absolute -top-4 -left-6 w-8 h-8 text-brand-accent bg-white" />
                             <p className="text-xl text-slate-700 italic font-medium leading-relaxed">
-                                Ko'pchilik "kurs sotib qochishni" o'ylaydi. Mening yillik aylanmam <span className="font-bold text-brand-dark bg-yellow-200 px-1">$100,000,000</span> dan oshadi. Men uchun kurs sotish — bu daromad manbai emas, balki kuchli jamoa yig'ish vositasi. Menga shogird emas, biznes sheriklar kerak.
+                                Ko'pchilik "kurs sotib qochishni" o'ylaydi. Mening yillik aylanmam <span className="font-bold text-brand-dark bg-yellow-200 px-1">$130,000,000</span> dan oshadi. Men uchun kurs sotish — bu daromad manbai emas, balki kuchli jamoa yig'ish vositasi. Menga shogird emas, biznes sheriklar kerak.
                             </p>
                         </div>
 

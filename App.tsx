@@ -1,6 +1,7 @@
 import React from 'react';
 import Hero from './components/Hero';
 import Stats from './components/Stats';
+import Partners from './components/Partners';
 import MarketOpportunity from './components/MarketOpportunity';
 import PainPoints from './components/PainPoints';
 import WhyUs from './components/WhyUs';
@@ -22,6 +23,7 @@ function App() {
         {/* Stage 1: Hook & Promise */}
         <Hero />
         <Stats />
+        <Partners />
 
         {/* Stage 2: Problem & Agitation */}
         <PainPoints />

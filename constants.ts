@@ -80,107 +80,151 @@ export const CURRICULUM = [
 
 export const PRICING_PLANS = [
   {
-    name: "Standart",
-    price: "$999",
+    name: "Uzum Yandex",
+    price: "$1200",
+    oldPrice: "$1500",
     period: "",
-    duration: "1 oy + 1 oy texnik yordam",
-    subtitle: "UZUM bilan ishga tushirish",
+    subtitle: "2 ta marketpleys",
     features: [
-      "UZUM platformasida ishlash",
-      "Shartnoma tuzish va tovar tanlash",
-      "Mahsulot kartochkalarini yaratish",
-      "Assortiment tahlili va optimizatsiya",
-      "Logistika turlari (FBS, FBO, DBS)",
-      "Reklama sozlash bo'yicha qo'llanma",
-      "Ijobiy sharhlar strategiyasi",
-      "Xitoydan to'g'ridan-to'g'ri xaridlar",
-      "MPstats - 1 oy bepul kirish",
-      "Kurs oxirida sertifikat"
+      "Uzum va Yandex Market",
+      "Mahsulot kartochkalari",
+      "Shartnoma va hujjatlar",
+      "Reklama boshqaruvi"
     ],
     highlight: false
   },
   {
-    name: "Standart Plus",
-    price: "$1999",
+    name: "WB Ozon",
+    price: "$1500",
+    oldPrice: "$2000",
     period: "",
-    duration: "1 oy + 1 oy texnik yordam",
-    subtitle: "Ko'p platformali start",
+    subtitle: "2 ta platformalar",
     features: [
-      "Barcha Standart paket imkoniyatlari",
-      "Uzum, Ozon, Wildberries, Yandex Market",
-      "Tovar xarid byudjeti: $1000-$1500",
-      "Haftada 2 marta 2 soatlik darslar",
-      "MPstats - 1 oy bepul kirish",
-      "Kurs oxirida sertifikat"
+      "Wildberries va Ozon",
+      "Professional kartochka dizayni",
+      "SEO optimizatsiya",
+      "Raqobatchilar tahlili"
+    ],
+    highlight: false
+  },
+  {
+    name: "WB Uzum Yandex",
+    price: "$2000",
+    oldPrice: "$3000",
+    period: "",
+    subtitle: "3 platformada ishga tushirish",
+    features: [
+      "Wildberries, Uzum, Yandex",
+      "Kompleks reklama strategiyasi",
+      "SEO va analitika",
+      "Oylik hisobotlar"
+    ],
+    highlight: false
+  },
+  {
+    name: "Ozon Uzum Yandex",
+    price: "$2000",
+    oldPrice: "$3000",
+    period: "",
+    subtitle: "3 platformali paket",
+    features: [
+      "Ozon, Uzum, Yandex",
+      "Professional boshqaruv",
+      "Marketing yechimlar",
+      "Shaxsiy menejer"
+    ],
+    highlight: false
+  },
+  {
+    name: "WB Ozon Yandex",
+    price: "$2000",
+    oldPrice: "$3000",
+    period: "",
+    subtitle: "3 platformalar",
+    features: [
+      "Wildberries, Ozon, Yandex",
+      "Barcha kanallarda reklama",
+      "Cross-platform analitika",
+      "24/7 qo'llab-quvvatlash"
+    ],
+    highlight: false
+  },
+  {
+    name: "WB, Ozon, Uzum, Yandex",
+    price: "$2500",
+    oldPrice: "$4000",
+    period: "",
+    subtitle: "Barcha platformalar",
+    features: [
+      "4 ta yetakchi marketpleys",
+      "To'liq bozor qamrovi",
+      "Premium reklama",
+      "Shaxsiy account manager"
+    ],
+    highlight: false
+  },
+  {
+    name: "Menegerlik Tarifi",
+    price: "$2000",
+    period: "",
+    subtitle: "WB, Ozon, Uzum, Yandex + Ish ta'minoti",
+    features: [
+      "Barcha 4 platformada ishlash",
+      "Oylik minimum $1000 daromad",
+      "Ish topib berish kafolati",
+      "To'liq biznes boshqaruvi",
+      "Tovar tanlash va xarid",
+      "Marketing va reklama"
     ],
     highlight: true
-  },
-  {
-    name: "Biznes",
-    price: "$2999",
-    period: "",
-    duration: "2 oy + 2 oy texnik yordam",
-    subtitle: "Xalqaro darajaga chiqish",
-    features: [
-      "Standart va Standart Plus imkoniyatlari",
-      "Shaxsiy kurator bilan ishlash",
-      "Chuqur platformalar va strategiyalar",
-      "Xitoy va Turkiyaga amaliy sayohatlar",
-      "Biznes nonushta va kechki ovqatlar",
-      "Biznes-forumlarda qatnashish",
-      "Xitoydan to'g'ridan-to'g'ri buyurtmalar",
-      "MPstats - 3 oy bepul kirish",
-      "Haftada 3 marta 2 soatlik darslar",
-      "Kurs oxirida sertifikat"
-    ],
-    highlight: false
-  },
-  {
-    name: "VIP",
-    price: "$3999",
-    period: "",
-    duration: "3 oy + 3 oy texnik yordam",
-    subtitle: "Maksimal bilim va imkoniyatlar",
-    features: [
-      "Barcha paketlarning imkoniyatlari",
-      "4 oylik bepul ta'lim kirish",
-      "Yirik bozorlarga eksklyuziv sayohatlar",
-      "Ekspertlar bilan biznes-rejalar ishlab chiqish",
-      "Biznes nonushta va kechki ovqatlar",
-      "Yirik forumlarda qatnashish",
-      "Xitoydan to'g'ridan-to'g'ri buyurtmalar",
-      "Haftada 3 marta 2 soatlik darslar",
-      "MPstats - 4 oy bepul kirish",
-      "Professionallikni tasdiqlovchi sertifikat"
-    ],
-    highlight: false
   }
 ];
 
 export const TESTIMONIALS = [
   {
-    name: "Bogdanov D.K.",
-    role: "Uy tekstili",
-    result: "+150%",
-    revenue: "1.2 mlrd so'm/oy",
-    desc: "6 oyda Wildberries’da 150% o‘sishga erishdi. Kartochkalarni optimallashtirish va to‘g‘ri reklama strategiyasi natijasida.",
-    imagePrompt: "Portrait of a happy middle-aged russian businessman, wearing casual shirt, office background, high quality"
+    name: "Lei Jun",
+    role: "Xiaomi",
+    result: "$15 mln",
+    revenue: "Oborot",
+    desc: "Xitoy",
+    flag: "https://flagcdn.com/w40/cn.png",
+    image: "/images/lei_jun.jpg"
   },
   {
-    name: "Surnina O.V.",
-    role: "Kosmetika brendi",
-    result: "$1M",
-    revenue: "Yillik aylanma",
-    desc: "Ozon va Wildberries orqali bozorda muvaffaqiyatli start oldi. Birinchi yilda katta natija.",
-    imagePrompt: "Portrait of a successful young business woman, blonde hair, professional blazer, confident smile, studio lighting"
+    name: "Aleksey Sokolov",
+    role: "Sokolov",
+    result: "$10 mln",
+    revenue: "Oborot",
+    desc: "Rossiya",
+    flag: "https://flagcdn.com/w40/ru.png",
+    image: "/images/sokolov.jpg"
   },
   {
-    name: "Sharipov U.Sh.",
-    role: "Elektronika do‘koni",
-    result: "60%",
-    revenue: "Konversiya oshdi",
-    desc: "Yandex.Marketda 50–60% konversiya o‘sishi. Izohlar bilan ishlash va SEO optimizatsiya orqali.",
-    imagePrompt: "Portrait of a smart uzbek male entrepreneur, glasses, modern office background, looking at tablet"
+    name: "Fabio Delonghi",
+    role: "Delonghi",
+    result: "$20 mln",
+    revenue: "Yillik oborot",
+    desc: "Italiya",
+    flag: "https://flagcdn.com/w40/it.png",
+    image: "/images/delonghi.png"
+  },
+  {
+    name: "Mohamed Alabbar",
+    role: "Emaar Perfumes",
+    result: "$5 mln",
+    revenue: "Yillik oborot",
+    desc: "Dubay",
+    flag: "https://flagcdn.com/w40/ae.png",
+    image: "/images/alabbar.png"
+  },
+  {
+    name: "Darshan Singh",
+    role: "Himalaya Herbals",
+    result: "$7 mln",
+    revenue: "Yillik oborot",
+    desc: "Hindiston",
+    flag: "https://flagcdn.com/w40/in.png",
+    image: "/images/singh.png"
   }
 ];
 
@@ -212,45 +256,56 @@ export const FAQ_ITEMS = [
 ];
 
 export const STATS = [
-  { label: "Muallif Oboroti", value: "$100M+" },
+  { label: "Muallif Oboroti", value: "$130M+" },
   { label: "Kafolat", value: "$1000+" },
   { label: "Mijozlar (RF)", value: "400+" },
-  { label: "O'sish (6 oyda)", value: "61%" },
+  { label: "O'sish (6 oyda)", value: "70%" },
 ];
 
 export const SYSTEM_INSTRUCTION = `
 Siz Market Pro Academy kompaniyasining sun'iy intellekt asosidagi yordamchisisiz.
-Sizning vazifangiz mijozlarga kompaniya kurslari, paketlari va afzalliklari haqida ma'lumot berishdir.
+Sizning vazifangiz mijozlarga kompaniya xizmatlari, paketlari va afzalliklari haqida ma'lumot berishdir.
 Quyidagi ma'lumotlardan foydalaning:
 
 Kompaniya haqida:
-Market Pro Academy - marketpleyslarda savdo qilishni o'rgatuvchi ta'lim kompaniyasi. 6 yillik tajriba. 400+ mijoz. 50+ xodim. Ofislar Toshkent, Samarqand va Moskvada.
-Kurs muallifi va asoschi yillik aylanmasi $100 Million dollardan oshadi.
+Market Pro Academy - marketpleyslarda savdo qilishni o'rgatuvchi va savdoni boshqarishni taklif qiluvchi kompaniya. 7 yillik tajriba. 400+ mijoz. 50+ xodim. Ofislar Toshkent, Samarqand va Moskvada.
+Kompaniya asoschilarining yillik aylanmasi $130 Million dollardan oshadi.
 
-ASOSIY TAKLIF (KILLER OFFER):
-Biz kursni muvaffaqiyatli bitirgan har bir o'quvchiga $1000+ maoshli ish topib berishga KAFOLAT beramiz.
+XIZMAT PAKETLARI:
 
-Kurs Paketlari:
-1. Standart ($999): 1 oy + 1 oy texnik yordam. UZUM platformasida ishlash, shartnoma, tovar tanlash, kartochkalar yaratish, logistika, reklama, Xitoydan xaridlar. MPstats 1 oy bepul.
+1. Uzum Yandex ($1200, chegirmada $1500 dan): 
+   2 ta marketpleys - Uzum va Yandex Market.
 
-2. Standart Plus ($1999) - ENG OMMABOP: 1 oy + 1 oy texnik yordam. Uzum, Ozon, Wildberries, Yandex Market. Tovar xarid byudjeti $1000-$1500. Haftada 2x2 soat darslar. MPstats 1 oy bepul.
+2. WB Ozon ($1500, chegirmada $2000 dan):
+   Wildberries va Ozon.
 
-3. Biznes ($2999): 2 oy + 2 oy texnik yordam. Shaxsiy kurator. Xitoy va Turkiyaga sayohatlar. Biznes nonushta/kechki ovqatlar. Forumlarda qatnashish. Haftada 3x2 soat. MPstats 3 oy bepul.
+3. WB Uzum Yandex ($2000, chegirmada $3000 dan):
+   3 platformada - Wildberries, Uzum, Yandex.
 
-4. VIP ($3999): 3 oy + 3 oy texnik yordam. 4 oylik bepul ta'lim. Eksklyuziv sayohatlar. Ekspertlar bilan biznes-rejalar. Yirik forumlarda qatnashish. Haftada 3x2 soat. MPstats 4 oy bepul.
+4. Ozon Uzum Yandex ($2000, chegirmada $3000 dan):
+   3 platformali paket - Ozon, Uzum, Yandex.
+
+5. WB Ozon Yandex ($2000, chegirmada $3000 dan):
+   3 platformalar - Wildberries, Ozon, Yandex.
+
+6. WB, Ozon, Uzum, Yandex ($2500, chegirmada $4000 dan):
+   Barcha 4 ta yetakchi marketpleys.
+
+7. Menegerlik Tarifi ($2000 bir martalik to'lov) - ENG OMMABOP:
+   MAXSUS TAKLIF! Barcha 4 platformada (WB, Ozon, Uzum, Yandex) ishlash.
+   Biz sizga ish topib beramiz va oylik minimum $1000 daromad kafolatlaymiz.
 
 Barcha paketlarda:
-- Kurs oxirida rasmiy sertifikat
-- Xitoydan to'g'ridan-to'g'ri xaridlar bo'yicha yordam
-- Kafolatlangan ish joylashtiruvi ($1000+ maosh)
+- Professional mahsulot kartochkalari
+- SEO optimizatsiya
+- Reklama boshqaruvi
+- Texnik qo'llab-quvvatlash
 
-Natijalar:
-- Kursni tugatganlarning 95%i ish topadi
-- O'rtacha ish haqi $1000-$2000
-- Eng yaxshi o'quvchilar $3000+ daromad qilishadi
+Chegirmalar:
+Hozirgi chegirma narxlari cheklangan muddat uchun amal qiladi!
 
 Muloqot uslubi:
 Do'stona, professional, o'zbek tilida (lotin yozuvida). Qisqa va aniq javob bering.
 Sotuvga undashga harakat qiling (Call to action).
-Paketlar orasidagi farqlarni tushuntirib bering.
+Eng ommabop paket sifatida "Menegerlik Tarifi" ni taklif qiling - bu $2000 evaziga $1000 lik oylik maoshli ish kafolati.
 `;
