@@ -12,17 +12,25 @@ const JobGuarantee = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-r from-blue-900 to-brand-dark relative border-y border-white/5 overflow-hidden">
-      {/* Background patterns */}
-      <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-10"></div>
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-green-500/10 rounded-full blur-[100px]"></div>
+    <section
+      className="py-20 bg-gradient-to-r from-blue-900 to-brand-dark relative border-y border-white/5 overflow-hidden"
+      style={{ contentVisibility: 'auto', containIntrinsicSize: '600px' } as any}
+    >
+      {/* Background patterns - Simplified */}
+      <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-green-500/5 rounded-full blur-[80px]"></div>
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="bg-[#0F1623]/80 backdrop-blur-xl border border-blue-500/30 rounded-[2.5rem] p-8 md:p-12 shadow-[0_0_50px_rgba(37,99,235,0.15)]">
+        <div className="bg-[#0F1623] border border-blue-500/30 rounded-[2.5rem] p-8 md:p-12 shadow-[0_0_50px_rgba(37,99,235,0.15)]">
           <div className="flex flex-col lg:flex-row items-center gap-12">
 
             {/* Left: Text Content */}
-            <div className="lg:w-3/5 space-y-6">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="lg:w-3/5 space-y-6"
+            >
               <div className="inline-flex items-center gap-2 bg-green-500/20 text-green-400 px-4 py-1.5 rounded-full text-sm font-bold uppercase tracking-wider border border-green-500/20">
                 <ShieldCheck className="w-4 h-4" /> Rasmiy Kafolat
               </div>
@@ -49,15 +57,18 @@ const JobGuarantee = () => {
                   <span className="text-white font-medium">Hamkorlar bazasi</span>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
             {/* Right: Visual Offer Card */}
-            <div className="lg:w-2/5 w-full">
-              <motion.div
-                initial={{ scale: 0.9, rotate: 2 }}
-                whileInView={{ scale: 1, rotate: 0 }}
-                transition={{ type: "spring", stiffness: 100 }}
-                className="bg-gradient-to-br from-white to-slate-200 text-brand-dark rounded-2xl p-8 shadow-2xl relative transform rotate-[-2deg] hover:rotate-0 transition-transform duration-500"
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="lg:w-2/5 w-full"
+            >
+              <div
+                className="bg-gradient-to-br from-white to-slate-200 text-brand-dark rounded-2xl p-8 shadow-2xl relative transition-transform duration-500"
               >
                 <div className="absolute top-4 right-4 text-6xl opacity-10 font-black">JOB</div>
 
@@ -84,14 +95,14 @@ const JobGuarantee = () => {
                 </div>
 
                 <a
-                  href="#contact"
-                  onClick={(e) => handleScroll(e, 'contact')}
+                  href="#contact-form"
+                  onClick={(e) => handleScroll(e, 'contact-form')}
                   className="block w-full bg-brand-dark text-white text-center py-4 rounded-xl font-bold hover:bg-blue-900 transition-colors cursor-pointer"
                 >
                   O'rin band qilish
                 </a>
-              </motion.div>
-            </div>
+              </div>
+            </motion.div>
 
           </div>
         </div>

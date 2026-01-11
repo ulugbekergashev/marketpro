@@ -1,13 +1,17 @@
 import React from 'react';
 import { TESTIMONIALS } from '../constants';
-import { Quote, Star, ArrowUpRight, TrendingUp } from 'lucide-react';
+import { Quote, Star, ArrowUpRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Testimonials = () => {
   return (
-    <section id="results" className="py-24 bg-brand-dark relative overflow-hidden">
-      {/* Background Gradients */}
-      <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-purple-900/10 rounded-full blur-[120px] pointer-events-none"></div>
+    <section
+      id="results"
+      className="py-24 bg-brand-dark relative overflow-hidden"
+      style={{ contentVisibility: 'auto', containIntrinsicSize: '800px' } as any}
+    >
+      {/* Background Gradients - Simplified */}
+      <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-purple-900/5 rounded-full blur-[80px] pointer-events-none"></div>
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
@@ -23,14 +27,14 @@ const Testimonials = () => {
           {TESTIMONIALS.map((item, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 40 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
               className="w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-2rem)] bg-gradient-to-br from-[#0F1623] to-[#1a2332] rounded-3xl border border-white/10 overflow-hidden group hover:border-blue-500/40 transition-all duration-500 hover:shadow-[0_0_40px_rgba(37,99,235,0.15)] flex flex-col relative"
             >
-              {/* Gradient Accent */}
-              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-full blur-3xl"></div>
+              {/* Gradient Accent - Simplified */}
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-full blur-2xl"></div>
 
               <div className="p-8 flex flex-col flex-1 relative z-10">
                 {/* Header */}
@@ -40,6 +44,8 @@ const Testimonials = () => {
                       <img
                         src={(item as any).image}
                         alt={item.name}
+                        loading="lazy"
+                        decoding="async"
                         className="w-full h-full object-cover object-top"
                       />
                     </div>
@@ -66,6 +72,8 @@ const Testimonials = () => {
                     <img
                       src={(item as any).flag}
                       alt={item.desc}
+                      loading="lazy"
+                      decoding="async"
                       className="w-6 h-4 object-cover rounded shadow-sm"
                     />
                   )}

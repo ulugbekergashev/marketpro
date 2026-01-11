@@ -1,6 +1,6 @@
 import React from 'react';
 import { PAIN_POINTS } from '../constants';
-import { TrendingDown, Swords, AlertTriangle, RefreshCw, XCircle, CheckCircle2 } from 'lucide-react';
+import { TrendingDown, Swords, AlertTriangle, RefreshCw, CheckCircle2 } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const iconMap: Record<string, React.FC<any>> = {
@@ -17,7 +17,10 @@ const PainPoints = () => {
   };
 
   return (
-    <section className="py-24 bg-[#050914] relative border-b border-white/5">
+    <section
+      className="py-24 bg-[#050914] relative border-b border-white/5"
+      style={{ contentVisibility: 'auto', containIntrinsicSize: '800px' } as any}
+    >
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
@@ -36,10 +39,11 @@ const PainPoints = () => {
               return (
                 <motion.div
                   key={index}
-                  initial={{ opacity: 0, x: -50 }}
+                  initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  style={{ willChange: 'transform, opacity' }}
                   className="flex gap-6 p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-red-500/30 transition-colors group"
                 >
                   <div className="flex-shrink-0">
@@ -58,12 +62,14 @@ const PainPoints = () => {
 
           {/* Right: The Solution Visual */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
+            initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="relative bg-gradient-to-br from-blue-900/20 to-brand-dark p-8 rounded-[2.5rem] border border-blue-500/30"
+            transition={{ duration: 0.6 }}
+            style={{ willChange: 'transform, opacity' }}
+            className="relative bg-gradient-to-br from-blue-900/10 to-brand-dark p-8 rounded-[2.5rem] border border-blue-500/20"
           >
-            <div className="absolute top-0 right-0 w-64 h-64 bg-blue-600/20 blur-[80px] rounded-full"></div>
+            <div className="absolute top-0 right-0 w-64 h-64 bg-blue-600/10 blur-[60px] rounded-full"></div>
 
             <h3 className="text-2xl font-bold text-white mb-8 relative z-10">
               Market Pro Academy bilan siz nimalarni olasiz?
@@ -91,8 +97,8 @@ const PainPoints = () => {
             <div className="mt-10 p-6 bg-blue-600 rounded-2xl text-center shadow-lg shadow-blue-600/30">
               <p className="text-blue-100 text-sm mb-2 font-medium">Barchasini o'zgartirishga tayyormisiz?</p>
               <a
-                href="#contact"
-                onClick={(e) => handleScroll(e, 'contact')}
+                href="#contact-form"
+                onClick={(e) => handleScroll(e, 'contact-form')}
                 className="text-white font-bold text-xl block hover:scale-105 transition-transform cursor-pointer"
               >
                 Hoziroq bog'laning

@@ -1,39 +1,39 @@
-import React, { useEffect, useState } from 'react';
-import { generateHeroImage } from '../services/geminiService';
+import React from 'react';
 import { Quote, CheckCircle, TrendingUp } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const Mentor = () => {
-    const [image, setImage] = useState<string | null>(null);
-
-    useEffect(() => {
-        const fetchImage = async () => {
-            if (process.env.API_KEY) {
-                const img = await generateHeroImage();
-                setImage(img);
-            }
-        }
-        fetchImage();
-    }, []);
-
     return (
-        <section className="py-24 bg-white text-brand-dark relative overflow-hidden">
+        <section
+            className="py-24 bg-white text-brand-dark relative overflow-hidden"
+            style={{ contentVisibility: 'auto', containIntrinsicSize: '800px' } as any}
+        >
             <div className="container mx-auto px-6 relative z-10">
                 <div className="flex flex-col lg:flex-row gap-12 items-center">
 
-                    <div className="lg:w-1/2 relative group">
+                    <motion.div
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                        style={{ willChange: 'transform, opacity' }}
+                        className="lg:w-1/2 relative group"
+                    >
                         {/* 100M Badge */}
-                        <div className="absolute top-8 -right-4 z-20 bg-gradient-to-r from-yellow-500 to-amber-600 text-white p-4 rounded-l-xl shadow-xl transform group-hover:scale-105 transition-transform">
+                        <div className="absolute top-8 -right-4 z-20 bg-gradient-to-r from-yellow-500 to-amber-600 text-white p-4 rounded-l-xl shadow-lg">
                             <div className="text-xs uppercase font-bold tracking-wider opacity-90">Yillik aylanma</div>
                             <div className="text-3xl font-extrabold flex items-center gap-1">
                                 $130,000,000 <TrendingUp className="w-6 h-6" />
                             </div>
                         </div>
 
-                        <div className="aspect-[4/5] rounded-[2rem] overflow-hidden bg-slate-200 shadow-2xl relative z-10">
+                        <div className="aspect-[4/5] rounded-[2rem] overflow-hidden bg-slate-200 shadow-lg relative z-10">
                             <img
                                 src="/images/WOXA9986.jpg"
                                 alt="Mentor"
-                                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                                loading="lazy"
+                                decoding="async"
+                                className="w-full h-full object-cover"
                             />
                             <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/90 via-black/50 to-transparent p-8 text-white pt-24">
                                 <h3 className="text-3xl font-bold mb-1">Market Pro Asoschisi</h3>
@@ -42,11 +42,18 @@ const Mentor = () => {
                                 </p>
                             </div>
                         </div>
-                        {/* Decorative element */}
-                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-brand-blue/5 rounded-full blur-3xl -z-10"></div>
-                    </div>
+                        {/* Decorative element - Simplified */}
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100%] h-[100%] bg-brand-blue/5 rounded-full blur-xl -z-10"></div>
+                    </motion.div>
 
-                    <div className="lg:w-1/2 space-y-8">
+                    <motion.div
+                        initial={{ opacity: 0, x: 20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                        style={{ willChange: 'transform, opacity' }}
+                        className="lg:w-1/2 space-y-8"
+                    >
                         <div className="inline-block bg-blue-100 text-blue-700 px-4 py-2 rounded-lg font-bold text-sm">
                             TOP EKSPERT
                         </div>
@@ -81,12 +88,12 @@ const Mentor = () => {
                         </div>
 
                         <button
-                            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'auto' })}
-                            className="bg-brand-dark text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-800 transition-all shadow-xl hover:shadow-2xl w-full sm:w-auto"
+                            onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'auto' })}
+                            className="bg-brand-dark text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-800 transition-all shadow-lg hover:shadow-xl w-full sm:w-auto"
                         >
                             Mentor bilan gaplashish
                         </button>
-                    </div>
+                    </motion.div>
 
                 </div>
             </div>

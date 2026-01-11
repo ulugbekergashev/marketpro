@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 
 const brands = [
     { name: 'Apple', logo: 'https://cdn.simpleicons.org/apple/white' },
@@ -15,7 +14,10 @@ const brands = [
 
 const Partners = () => {
     return (
-        <section className="py-16 bg-[#050914] border-b border-white/5">
+        <section
+            className="py-16 bg-[#050914] border-b border-white/5"
+            style={{ contentVisibility: 'auto', containIntrinsicSize: '200px' } as any}
+        >
             <div className="container mx-auto px-6">
                 <div className="text-center mb-12">
                     <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
@@ -28,12 +30,8 @@ const Partners = () => {
 
                 <div className="flex flex-wrap justify-center gap-8 md:gap-16 items-center">
                     {brands.map((brand, index) => (
-                        <motion.div
+                        <div
                             key={index}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.5, delay: index * 0.1 }}
                             className="w-24 h-12 md:w-32 md:h-16 flex items-center justify-center group"
                         >
                             <img
@@ -41,7 +39,7 @@ const Partners = () => {
                                 alt={brand.name}
                                 className={`max-w-full max-h-full object-contain transition-all duration-300 opacity-50 group-hover:opacity-100 ${brand.isCustom ? 'mix-blend-screen' : ''}`}
                             />
-                        </motion.div>
+                        </div>
                     ))}
                 </div>
             </div>

@@ -1,10 +1,12 @@
 import React from 'react';
-import { TrendingUp, ArrowUpRight, BarChart3 } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { TrendingUp, BarChart3 } from 'lucide-react';
 
 const MarketOpportunity = () => {
   return (
-    <section className="py-24 bg-[#0B0F19] relative overflow-hidden">
+    <section
+      className="py-24 bg-[#0B0F19] relative overflow-hidden"
+      style={{ contentVisibility: 'auto', containIntrinsicSize: '600px' } as any}
+    >
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
@@ -73,10 +75,8 @@ const MarketOpportunity = () => {
           <div className="relative pt-12">
             {/* Abstract Chart Visualization */}
             <div className="aspect-square bg-gradient-to-br from-[#0F1623] to-[#020617] rounded-3xl border border-white/10 p-8 relative overflow-hidden flex items-end shadow-2xl">
-              <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20"></div>
-
               {/* Graph Lines Grid */}
-              <div className="absolute inset-0 p-8 flex flex-col justify-between pointer-events-none opacity-20">
+              <div className="absolute inset-0 p-8 flex flex-col justify-between pointer-events-none opacity-10">
                 <div className="w-full h-px bg-white border-dashed border-t"></div>
                 <div className="w-full h-px bg-white border-dashed border-t"></div>
                 <div className="w-full h-px bg-white border-dashed border-t"></div>
@@ -86,44 +86,40 @@ const MarketOpportunity = () => {
 
               {/* Bars */}
               <div className="w-full h-full flex items-end justify-between gap-4 relative z-10">
-                <motion.div
-                  initial={{ height: "0%" }} whileInView={{ height: "25%" }} transition={{ duration: 0.8 }}
-                  className="flex-1 bg-slate-700/30 rounded-t-lg relative group border-t border-x border-white/10"
+                <div
+                  className="flex-1 bg-slate-700/30 rounded-t-lg relative group border-t border-x border-white/10 h-[25%]"
                 >
                   <div className="absolute -top-8 left-1/2 -translate-x-1/2 text-slate-500 font-bold text-sm">2022</div>
                   <div className="absolute bottom-2 left-1/2 -translate-x-1/2 text-white/50 text-xs rotate-[-90deg] origin-center mb-4">$150M</div>
-                </motion.div>
+                </div>
 
-                <motion.div
-                  initial={{ height: "0%" }} whileInView={{ height: "45%" }} transition={{ duration: 0.8, delay: 0.1 }}
-                  className="flex-1 bg-blue-900/40 rounded-t-lg relative group border-t border-x border-blue-500/20"
+                <div
+                  className="flex-1 bg-blue-900/40 rounded-t-lg relative group border-t border-x border-blue-500/20 h-[45%]"
                 >
                   <div className="absolute -top-8 left-1/2 -translate-x-1/2 text-blue-400 font-bold text-sm">2023</div>
                   <div className="absolute bottom-2 left-1/2 -translate-x-1/2 text-white/70 text-xs rotate-[-90deg] origin-center mb-4">$300M</div>
-                </motion.div>
+                </div>
 
-                <motion.div
-                  initial={{ height: "0%" }} whileInView={{ height: "70%" }} transition={{ duration: 0.8, delay: 0.2 }}
-                  className="flex-1 bg-gradient-to-t from-blue-600 to-blue-400 rounded-t-lg relative group shadow-[0_0_50px_rgba(37,99,235,0.3)]"
+                <div
+                  className="flex-1 bg-gradient-to-t from-blue-600 to-blue-400 rounded-t-lg relative group h-[70%]"
                 >
                   <div className="absolute -top-12 left-1/2 -translate-x-1/2 bg-blue-600 text-white text-xs font-bold px-2 py-1 rounded">Siz shu yerdasiz</div>
                   <div className="absolute -top-6 left-1/2 -translate-x-1/2 text-white font-bold text-sm">2024</div>
                   <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white font-bold text-sm rotate-[-90deg] origin-center mb-6">$500M+</div>
-                </motion.div>
+                </div>
 
-                <motion.div
-                  initial={{ height: "0%" }} whileInView={{ height: "100%" }} transition={{ duration: 0.8, delay: 0.3 }}
-                  className="flex-1 bg-gradient-to-t from-green-500 to-emerald-400 rounded-t-lg relative group shadow-[0_0_50px_rgba(16,185,129,0.3)]"
+                <div
+                  className="flex-1 bg-gradient-to-t from-green-500 to-emerald-400 rounded-t-lg relative group h-[100%]"
                 >
                   <div className="absolute top-4 left-1/2 -translate-x-1/2 text-brand-dark font-extrabold rotate-[-90deg] whitespace-nowrap tracking-widest opacity-50">MAQSAD</div>
                   <div className="absolute -top-8 left-1/2 -translate-x-1/2 text-green-400 font-bold text-sm">2027</div>
                   <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-brand-dark font-bold text-sm rotate-[-90deg] origin-center mb-6">$1B+</div>
-                </motion.div>
+                </div>
               </div>
             </div>
 
             {/* Floating Badge */}
-            <div className="absolute top-24 -left-6 bg-[#1E293B] border border-white/10 p-4 rounded-xl shadow-2xl animate-float z-20">
+            <div className="absolute top-24 -left-6 bg-[#1E293B] border border-white/10 p-4 rounded-xl shadow-2xl z-20">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-green-500/20 rounded-full flex items-center justify-center">
                   <TrendingUp className="w-5 h-5 text-green-500" />

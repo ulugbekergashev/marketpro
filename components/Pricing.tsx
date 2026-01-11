@@ -1,6 +1,6 @@
 import React from 'react';
 import { PRICING_PLANS } from '../constants';
-import { Check, Star, AlertCircle, Briefcase, Sparkles } from 'lucide-react';
+import { Check, Star, AlertCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Pricing = () => {
@@ -13,7 +13,11 @@ const Pricing = () => {
   };
 
   return (
-    <section id="pricing" className="py-24 bg-[#0B0F19]">
+    <section
+      id="pricing"
+      className="py-24 bg-[#0B0F19]"
+      style={{ contentVisibility: 'auto', containIntrinsicSize: '800px' } as any}
+    >
       <div className="container mx-auto px-6">
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Kurs Paketlari</h2>
@@ -26,18 +30,18 @@ const Pricing = () => {
           {PRICING_PLANS.map((plan, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className={`relative flex flex-col p-6 md:p-8 rounded-[2rem] h-full transition-transform duration-300 ${plan.highlight
-                ? 'bg-gradient-to-b from-blue-900/80 to-[#020617] border-2 border-blue-500 shadow-[0_0_60px_rgba(37,99,235,0.25)] z-10 scale-[1.02]'
+              className={`relative flex flex-col p-6 md:p-8 rounded-[2rem] h-full transition-colors duration-300 ${plan.highlight
+                ? 'bg-gradient-to-b from-blue-900/80 to-[#020617] border-2 border-blue-500 shadow-xl z-10'
                 : 'bg-white/5 border border-white/5 hover:border-white/10 hover:bg-white/[0.07]'
                 }`}
             >
               {plan.highlight && (
                 <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white px-6 py-2 rounded-full text-sm font-extrabold tracking-wide uppercase shadow-lg flex items-center gap-2 whitespace-nowrap z-20">
-                  <Star className="w-4 h-4 fill-white animate-pulse" /> Eng Ko'p Sotilgan
+                  <Star className="w-4 h-4 fill-white" /> Eng Ko'p Sotilgan
                 </div>
               )}
 
@@ -103,10 +107,10 @@ const Pricing = () => {
               )}
 
               <a
-                href="#contact"
-                onClick={(e) => handleScroll(e, 'contact')}
+                href="#contact-form"
+                onClick={(e) => handleScroll(e, 'contact-form')}
                 className={`w-full py-5 px-6 rounded-xl font-bold text-center transition-all mt-auto flex items-center justify-center gap-2 group cursor-pointer ${plan.highlight
-                  ? 'bg-blue-600 hover:bg-blue-500 text-white shadow-[0_0_30px_rgba(37,99,235,0.4)] hover:shadow-[0_0_50px_rgba(37,99,235,0.6)] transform hover:-translate-y-1'
+                  ? 'bg-blue-600 hover:bg-blue-500 text-white shadow-lg'
                   : 'bg-white text-brand-dark hover:bg-slate-200'
                   }`}
               >

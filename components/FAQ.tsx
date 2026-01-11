@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 import { FAQ_ITEMS } from '../constants';
 import { Plus, Minus } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="py-24 bg-[#020617] relative">
+    <section
+      id="faq"
+      className="py-24 bg-[#020617] relative"
+      style={{ contentVisibility: 'auto', containIntrinsicSize: '600px' } as any}
+    >
       <div className="container mx-auto px-6 max-w-4xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
@@ -20,13 +23,12 @@ const FAQ = () => {
 
         <div className="space-y-4">
           {FAQ_ITEMS.map((item, index) => (
-            <div 
-              key={index} 
-              className={`rounded-2xl border transition-all duration-300 ${
-                openIndex === index 
-                  ? 'bg-blue-900/10 border-blue-500/50' 
-                  : 'bg-white/5 border-white/5 hover:bg-white/10'
-              }`}
+            <div
+              key={index}
+              className={`rounded-2xl border transition-all duration-300 ${openIndex === index
+                ? 'bg-blue-900/10 border-blue-500/50'
+                : 'bg-white/5 border-white/5 hover:bg-white/10'
+                }`}
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
@@ -40,20 +42,13 @@ const FAQ = () => {
                 </div>
               </button>
 
-              <AnimatePresence>
-                {openIndex === index && (
-                  <motion.div
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: "auto", opacity: 1 }}
-                    exit={{ height: 0, opacity: 0 }}
-                    className="overflow-hidden"
-                  >
-                    <div className="p-6 pt-0 text-slate-400 leading-relaxed border-t border-white/5 mt-2">
-                      {item.answer}
-                    </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
+              {openIndex === index && (
+                <div className="overflow-hidden">
+                  <div className="p-6 pt-0 text-slate-400 leading-relaxed border-t border-white/5 mt-2">
+                    {item.answer}
+                  </div>
+                </div>
+              )}
             </div>
           ))}
         </div>

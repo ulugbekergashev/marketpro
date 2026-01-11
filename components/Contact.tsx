@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MapPin, Phone, Mail, ArrowRight } from 'lucide-react';
+import { MapPin, Phone, ArrowRight } from 'lucide-react';
 import { sendToTelegram } from '../services/telegram';
 
 const Contact = () => {
@@ -40,11 +40,15 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-24 bg-gradient-to-b from-brand-dark to-[#050914] text-white">
+    <section
+      id="contact"
+      className="py-24 bg-gradient-to-b from-brand-dark to-[#050914] text-white"
+      style={{ contentVisibility: 'auto', containIntrinsicSize: '800px' } as any}
+    >
       <div className="container mx-auto px-6">
         <div className="bg-blue-600 rounded-[3rem] p-10 md:p-20 relative overflow-hidden">
-          {/* Decor */}
-          <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-white/10 rounded-full blur-[100px] translate-x-1/2 -translate-y-1/2"></div>
+          {/* Decor - Simplified */}
+          <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-white/5 rounded-full blur-[80px] translate-x-1/2 -translate-y-1/2"></div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 relative z-10 items-center">
             <div>
@@ -88,7 +92,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="bg-white text-slate-900 p-8 rounded-3xl shadow-2xl">
+            <div id="contact-form" className="bg-white text-slate-900 p-8 rounded-3xl shadow-2xl scroll-mt-20">
               <h3 className="text-2xl font-bold mb-6">Ariza qoldirish</h3>
 
               {submitted ? (
