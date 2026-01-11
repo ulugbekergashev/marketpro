@@ -78,6 +78,18 @@ export const CURRICULUM = [
   }
 ];
 
+export const COMMON_FEATURES = [
+  "Professional mahsulot kartochkalari",
+  "SEO optimizatsiya va analitika",
+  "Reklama strategiyasini boshqarish",
+  "24/7 Texnik qo'llab-quvvatlash",
+  "Xitoydan tovar xarid qilishda yordam",
+  "Shaxsiy menejer maslahatlari",
+  "Hujjatlar va shartnomalar bilan ishlash",
+  "Kengaytirilgan bozor tahlili",
+  "Raqobatchilar doimiy monitoringi"
+];
+
 export const PRICING_PLANS = [
   {
     name: "Uzum Yandex",
@@ -85,12 +97,8 @@ export const PRICING_PLANS = [
     oldPrice: "$1500",
     period: "",
     subtitle: "2 ta marketpleys",
-    features: [
-      "Uzum va Yandex Market",
-      "Mahsulot kartochkalari",
-      "Shartnoma va hujjatlar",
-      "Reklama boshqaruvi"
-    ],
+    marketplaces: ["Uzum", "Yandex Market"],
+    features: [],
     highlight: false
   },
   {
@@ -98,13 +106,9 @@ export const PRICING_PLANS = [
     price: "$1500",
     oldPrice: "$2000",
     period: "",
-    subtitle: "2 ta platformalar",
-    features: [
-      "Wildberries va Ozon",
-      "Professional kartochka dizayni",
-      "SEO optimizatsiya",
-      "Raqobatchilar tahlili"
-    ],
+    subtitle: "2 ta platforma",
+    marketplaces: ["Wildberries", "Ozon"],
+    features: [],
     highlight: false
   },
   {
@@ -112,13 +116,9 @@ export const PRICING_PLANS = [
     price: "$2000",
     oldPrice: "$3000",
     period: "",
-    subtitle: "3 platformada ishga tushirish",
-    features: [
-      "Wildberries, Uzum, Yandex",
-      "Kompleks reklama strategiyasi",
-      "SEO va analitika",
-      "Oylik hisobotlar"
-    ],
+    subtitle: "3 ta platforma",
+    marketplaces: ["Wildberries", "Uzum", "Yandex"],
+    features: [],
     highlight: false
   },
   {
@@ -126,13 +126,9 @@ export const PRICING_PLANS = [
     price: "$2000",
     oldPrice: "$3000",
     period: "",
-    subtitle: "3 platformali paket",
-    features: [
-      "Ozon, Uzum, Yandex",
-      "Professional boshqaruv",
-      "Marketing yechimlar",
-      "Shaxsiy menejer"
-    ],
+    subtitle: "3 ta platforma",
+    marketplaces: ["Ozon", "Uzum", "Yandex"],
+    features: [],
     highlight: false
   },
   {
@@ -140,41 +136,31 @@ export const PRICING_PLANS = [
     price: "$2000",
     oldPrice: "$3000",
     period: "",
-    subtitle: "3 platformalar",
-    features: [
-      "Wildberries, Ozon, Yandex",
-      "Barcha kanallarda reklama",
-      "Cross-platform analitika",
-      "24/7 qo'llab-quvvatlash"
-    ],
+    subtitle: "3 ta platforma",
+    marketplaces: ["Wildberries", "Ozon", "Yandex"],
+    features: [],
     highlight: false
   },
   {
-    name: "WB, Ozon, Uzum, Yandex",
+    name: "Barcha Marketpleyslar",
     price: "$2500",
     oldPrice: "$4000",
     period: "",
-    subtitle: "Barcha platformalar",
-    features: [
-      "4 ta yetakchi marketpleys",
-      "To'liq bozor qamrovi",
-      "Premium reklama",
-      "Shaxsiy account manager"
-    ],
+    subtitle: "4 ta platforma",
+    marketplaces: ["Wildberries", "Ozon", "Uzum", "Yandex"],
+    features: [],
     highlight: false
   },
   {
     name: "Menegerlik Tarifi",
     price: "$2000",
     period: "",
-    subtitle: "WB, Ozon, Uzum, Yandex + Ish ta'minoti",
+    subtitle: "Ish ta'minoti kafolati",
+    marketplaces: ["Wildberries", "Ozon", "Uzum", "Yandex"],
     features: [
-      "Barcha 4 platformada ishlash",
-      "Oylik minimum $1000 daromad",
+      "Oylik min. $1000 daromad",
       "Ish topib berish kafolati",
-      "To'liq biznes boshqaruvi",
-      "Tovar tanlash va xarid",
-      "Marketing va reklama"
+      "To'liq biznes boshqaruvi"
     ],
     highlight: true
   }
