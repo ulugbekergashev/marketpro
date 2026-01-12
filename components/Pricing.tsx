@@ -93,8 +93,8 @@ const Pricing = () => {
                   <div className="flex flex-wrap gap-2">
                     {(plan as any).marketplaces?.map((mp: string, i: number) => (
                       <span key={i} className={`px-4 py-1.5 rounded-xl border text-[11px] font-bold uppercase tracking-wider transition-colors ${plan.highlight
-                          ? 'bg-blue-500/20 border-blue-500/30 text-blue-300'
-                          : 'bg-white/5 border-white/10 text-slate-300 group-hover:border-white/20'
+                        ? 'bg-blue-500/20 border-blue-500/30 text-blue-300'
+                        : 'bg-white/5 border-white/10 text-slate-300 group-hover:border-white/20'
                         }`}>
                         {mp}
                       </span>

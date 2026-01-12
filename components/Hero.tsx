@@ -47,50 +47,51 @@ const Hero = () => {
             className="order-2 lg:order-1 space-y-8 text-center lg:text-left flex flex-col items-center lg:items-start"
           >
             <div className="inline-flex items-center gap-2 bg-white/10 border border-white/10 rounded-full px-5 py-2 shadow-lg shadow-blue-500/10">
-              <Briefcase className="w-4 h-4 text-blue-400" />
-              <span className="text-xs md:text-sm font-bold text-blue-100 tracking-wide">BITIRUVCHILARGA $1000 LIK ISH KAFOLATI</span>
+              <Sparkles className="w-4 h-4 text-blue-400" />
+              <span className="text-xs md:text-sm font-bold text-blue-100 tracking-wide uppercase">Marketpleysda Professional Yechimlar</span>
             </div>
 
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-[1.1] tracking-tight uppercase">
-              Marketpleysda <br />
+              O'rganing yoki <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-indigo-400 to-white drop-shadow-2xl">
-                Muvaffaqiyat Yo'li
-              </span>
+                Biznesingizni TOPga
+              </span> <br />
+              Olib Chiqing
             </h1>
 
             <p className="text-base md:text-lg text-slate-400 max-w-lg leading-relaxed font-medium">
-              Noldan professional darajagacha to'liq ta'lim. 4 ta paket: <span className="text-white font-bold">Standart, Standart Plus, Biznes va VIP</span>. Kursni tugatganlar uchun <span className="text-blue-400 font-bold border-b border-blue-500/50">$1000+ maoshli ish kafolati</span>.
+              Noldan professional darajagacha <span className="text-white font-bold">Ta'lim</span> yoki mavjud biznesingiz uchun <span className="text-blue-400 font-bold">Kompleks Boshqaruv</span>. Biz bilan marketpleyslarda muvaffaqiyatga erishing.
             </p>
 
             <div className="flex flex-col w-full sm:w-auto sm:flex-row gap-4 pt-4">
               <a
-                href="#contact-form"
-                onClick={(e) => handleScroll(e, 'contact-form')}
+                href="#pricing"
+                onClick={(e) => handleScroll(e, 'pricing')}
                 className="group relative w-full sm:w-auto bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 px-8 rounded-xl transition-all shadow-[0_0_40px_rgba(37,99,235,0.3)] hover:shadow-[0_0_60px_rgba(37,99,235,0.5)] flex items-center justify-center gap-2 cursor-pointer overflow-hidden"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-600 opacity-100 group-hover:opacity-90 transition-opacity"></div>
                 <span className="relative flex items-center gap-2 uppercase tracking-wider text-sm">
-                  Kursga Yozilish <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  Kurslarni Ko'rish <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </span>
               </a>
               <a
-                href="#results"
-                onClick={(e) => handleScroll(e, 'results')}
+                href="#sellers"
+                onClick={(e) => handleScroll(e, 'sellers')}
                 className="w-full sm:w-auto bg-white/10 hover:bg-white/20 border border-white/10 text-white font-semibold py-4 px-8 rounded-xl transition-all flex items-center justify-center gap-2 cursor-pointer group"
               >
                 <span className="relative flex items-center gap-2 uppercase tracking-wider text-sm">
-                  <PlayCircle className="w-5 h-5 group-hover:text-blue-400 transition-colors" />
-                  Natijalarni ko'rish
+                  <Briefcase className="w-5 h-5 group-hover:text-blue-400 transition-colors" />
+                  B2B Xizmatlar
                 </span>
               </a>
             </div>
 
             <div className="flex flex-wrap justify-center lg:justify-start gap-6 pt-6 text-sm text-slate-400 font-medium">
               <div className="flex items-center gap-2 bg-white/5 px-4 py-2 rounded-lg border border-white/5">
-                <CheckCircle2 className="w-5 h-5 text-blue-500" /> ISH BILAN TA'MINLASH
+                <CheckCircle2 className="w-5 h-5 text-blue-500" /> $1000+ ISH KAFOLATI
               </div>
               <div className="flex items-center gap-2 bg-white/5 px-4 py-2 rounded-lg border border-white/5">
-                <CheckCircle2 className="w-5 h-5 text-blue-500" /> RASMIY SHARTNOMA
+                <CheckCircle2 className="w-5 h-5 text-blue-500" /> 15 KUNLIK NATIJA
               </div>
             </div>
           </motion.div>

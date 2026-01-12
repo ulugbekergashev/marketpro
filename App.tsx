@@ -14,11 +14,14 @@ import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import ChatWidget from './components/ChatWidget';
 import UrgencyBar from './components/UrgencyBar';
+import Sellers from './components/Sellers';
+import Header from './components/Header';
 
 function App() {
   return (
     <div className="min-h-screen bg-brand-dark relative selection:bg-brand-blue selection:text-white overflow-x-hidden">
 
+      <Header />
       <main>
         {/* Stage 1: Hook & Promise */}
         <Hero />
@@ -39,6 +42,7 @@ function App() {
 
         {/* Stage 5: Proof & Offer */}
         <Testimonials />
+        <Sellers />
         <Pricing />
         <FAQ />
 

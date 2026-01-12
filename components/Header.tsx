@@ -27,8 +27,8 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 border-b ${isScrolled
-          ? 'bg-brand-dark/80 backdrop-blur-xl border-white/10 py-4'
-          : 'bg-transparent border-transparent py-6'
+        ? 'bg-brand-dark/80 backdrop-blur-xl border-white/10 py-4'
+        : 'bg-transparent border-transparent py-6'
         }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
@@ -46,7 +46,7 @@ const Header = () => {
             <span className="text-xl font-bold tracking-tight text-white leading-none">
               Market Pro
             </span>
-            <span className="text-[10px] font-bold tracking-[0.2em] text-blue-400 uppercase">Academy</span>
+            <span className="text-[10px] font-bold tracking-[0.2em] text-blue-400 uppercase">Academy & B2B</span>
           </div>
         </a>
 

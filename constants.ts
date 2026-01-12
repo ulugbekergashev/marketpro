@@ -1,12 +1,34 @@
 export const NAV_LINKS = [
   { name: 'Nega Biz?', href: '#why-us' },
+  { name: 'Kurslar', href: '#pricing' },
+  { name: 'B2B Xizmatlar', href: '#sellers' },
   { name: 'Dastur', href: '#curriculum' },
   { name: 'Natijalar', href: '#results' },
-  { name: 'Tariflar', href: '#pricing' },
   { name: 'FAQ', href: '#faq' },
 ];
 
 export const SERVICES = []; // Cleared as requested
+
+export const SELLER_SERVICES = [
+  {
+    title: "Kompleks Boshqaruv",
+    description: "Marketpleys do'koningizni noldan TOPga olib chiqamiz. Strategiya, SEO, reklama va logistika - hammasi bizning zimmamizda.",
+    price: "$1000/oy + 2% KPI",
+    icon: "Store"
+  },
+  {
+    title: "Mentorlik (2 oy)",
+    description: "Biznesingizni masshtablashtirish bo'yicha intensiv yo'l-yo'riq. Haftalik strategik sessiyalar va shaxsiy yondashuv.",
+    price: "$3000",
+    icon: "Users"
+  },
+  {
+    title: "VIP Mentorlik (Yillik)",
+    description: "Kompaniya CEO si bilan shaxsiy ishlash. 12 oylik strategik reja, jamoani o'qitish va eksklyuziv networking.",
+    price: "$10000",
+    icon: "Star"
+  }
+];
 
 export const PAIN_POINTS = [
   {
@@ -216,16 +238,16 @@ export const TESTIMONIALS = [
 
 export const FAQ_ITEMS = [
   {
-    question: "Qaysi paket menga mos keladi?",
-    answer: "Agar siz yangi boshlovchi bo'lsangiz va bitta platformada (UZUM) ishlashni xohlasangiz - Standart paket. Ko'p platformalarda ishlashni istasangiz - Standart Plus. Xalqaro tajriba va networking kerak bo'lsa - Biznes yoki VIP paketlarni tanlang."
+    question: "Qaysi xizmat menga mos keladi?",
+    answer: "Agar siz yangi boshlovchi bo'lsangiz - Kurslarimizni tanlang. Agar sizda allaqachon biznes bo'lsa va uni masshtablashtirmoqchi bo'lsangiz - B2B xizmatlarimiz (Kompleks boshqaruv yoki Mentorlik) sizga mos keladi."
   },
   {
     question: "Kursni tugatgandan keyin haqiqatan ham ish topib berasizmi?",
     answer: "Ha, bu bizning rasmiy kafolatimiz. Kursni muvaffaqiyatli tamomlab, imtihondan o'tgan har bir o'quvchini hamkor kompaniyalarimizga menejer yoki marketolog sifatida joylashtiramiz. Minimal maosh $1000 dan boshlanadi."
   },
   {
-    question: "Men noldan boshlamoqchiman, menga to'g'ri keladimi?",
-    answer: "Albatta! Barcha paketlar yangi boshlovchilar uchun moslashgan. Biz sizga mahsulot tanlashdan tortib birinchi sotuvgacha qadam-baqadam yo'l ko'rsatamiz. Standart paket aynan yangi boshlovchilar uchun yaratilgan."
+    question: "B2B xizmatlarida natija kafolatlanadimi?",
+    answer: "Ha, biz 15 kun ichida do'koningizni TOP savdolarga olib chiqishni kafolatlaymiz. Agar natija bo'lmasa, xizmat haqini qaytarib beramiz."
   },
   {
     question: "Texnik yordam nima beradi?",
@@ -237,7 +259,7 @@ export const FAQ_ITEMS = [
   },
   {
     question: "Xitoydan tovar buyurtma qilishda yordam berasizmi?",
-    answer: "Ha, barcha paketlarda Xitoydan to'g'ridan-to'g'ri xaridlar bo'yicha yordam mavjud. Biz sizga ishonchli fabrikalar, transport kompaniyalari va bojxona rasmiylashtirish bo'yicha to'liq qo'llab-quvvatlash beramiz."
+    answer: "Ha, barcha paketlarda va B2B xizmatlarimizda Xitoydan to'g'ridan-to'g'ri xaridlar bo'yicha yordam mavjud. Biz sizga ishonchli fabrikalar, transport kompaniyalari va bojxona rasmiylashtirish bo'yicha to'liq qo'llab-quvvatlash beramiz."
   }
 ];
 
@@ -250,48 +272,24 @@ export const STATS = [
 
 export const SYSTEM_INSTRUCTION = `
 Siz Market Pro Academy kompaniyasining sun'iy intellekt asosidagi yordamchisisiz.
-Sizning vazifangiz mijozlarga kompaniya xizmatlari, paketlari va afzalliklari haqida ma'lumot berishdir.
+Sizning vazifangiz mijozlarga kompaniya xizmatlari (Ta'lim va B2B) haqida ma'lumot berishdir.
 Quyidagi ma'lumotlardan foydalaning:
 
 Kompaniya haqida:
-Market Pro Academy - marketpleyslarda savdo qilishni o'rgatuvchi va savdoni boshqarishni taklif qiluvchi kompaniya. 7 yillik tajriba. 400+ mijoz. 50+ xodim. Ofislar Toshkent, Samarqand va Moskvada.
-Kompaniya asoschilarining yillik aylanmasi $130 Million dollardan oshadi.
+Market Pro Academy - marketpleyslarda savdo qilishni o'rgatuvchi (Academy) va bizneslarni boshqaruvchi (B2B) kompaniya. 7 yillik tajriba. 400+ mijoz. 50+ xodim. Ofislar Toshkent, Samarqand va Moskvada.
 
-XIZMAT PAKETLARI:
+TA'LIM (ACADEMY):
+- Kurslar: Uzum, Yandex, WB, Ozon.
+- Narxlar: $1200 dan $2500 gacha.
+- Kafolat: Bitiruvchilarga $1000+ maoshli ish topib berish.
 
-1. Uzum Yandex ($1200, chegirmada $1500 dan): 
-   2 ta marketpleys - Uzum va Yandex Market.
-
-2. WB Ozon ($1500, chegirmada $2000 dan):
-   Wildberries va Ozon.
-
-3. WB Uzum Yandex ($2000, chegirmada $3000 dan):
-   3 platformada - Wildberries, Uzum, Yandex.
-
-4. Ozon Uzum Yandex ($2000, chegirmada $3000 dan):
-   3 platformali paket - Ozon, Uzum, Yandex.
-
-5. WB Ozon Yandex ($2000, chegirmada $3000 dan):
-   3 platformalar - Wildberries, Ozon, Yandex.
-
-6. WB, Ozon, Uzum, Yandex ($2500, chegirmada $4000 dan):
-   Barcha 4 ta yetakchi marketpleys.
-
-7. Menegerlik Tarifi ($2000 bir martalik to'lov) - ENG OMMABOP:
-   MAXSUS TAKLIF! Barcha 4 platformada (WB, Ozon, Uzum, Yandex) ishlash.
-   Biz sizga ish topib beramiz va oylik minimum $1000 daromad kafolatlaymiz.
-
-Barcha paketlarda:
-- Professional mahsulot kartochkalari
-- SEO optimizatsiya
-- Reklama boshqaruvi
-- Texnik qo'llab-quvvatlash
-
-Chegirmalar:
-Hozirgi chegirma narxlari cheklangan muddat uchun amal qiladi!
+B2B XIZMATLAR (SELLERS):
+1. Kompleks Boshqaruv ($1000/oy + 2% KPI): Do'konni to'liq boshqarish.
+2. Mentorlik ($3000, 2 oy): Biznesni masshtablashtirish.
+3. VIP Mentorlik ($10000/yil): CEO bilan shaxsiy ishlash.
+- Kafolat: 15 kun ichida TOP savdolarga chiqish.
 
 Muloqot uslubi:
 Do'stona, professional, o'zbek tilida (lotin yozuvida). Qisqa va aniq javob bering.
-Sotuvga undashga harakat qiling (Call to action).
-Eng ommabop paket sifatida "Menegerlik Tarifi" ni taklif qiling - bu $2000 evaziga $1000 lik oylik maoshli ish kafolati.
+Mijozning ehtiyojiga qarab (o'rganish yoki biznesni rivojlantirish) to'g'ri yo'nalish bering.
 `;
