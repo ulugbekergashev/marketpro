@@ -91,7 +91,7 @@ const Pricing = () => {
                 <div className="mb-10">
                   <p className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-4">O'rgatiladigan platformalar:</p>
                   <div className="flex flex-wrap gap-2">
-                    {(plan as any).marketplaces?.map((mp: string, i: number) => (
+                    {plan.marketplaces?.map((mp: string, i: number) => (
                       <span key={i} className={`px-4 py-1.5 rounded-xl border text-[11px] font-bold uppercase tracking-wider transition-colors ${plan.highlight
                         ? 'bg-blue-500/20 border-blue-500/30 text-blue-300'
                         : 'bg-white/5 border-white/10 text-slate-300 group-hover:border-white/20'
@@ -104,7 +104,7 @@ const Pricing = () => {
 
                 {/* Price Display */}
                 <div className="pb-8 border-b border-white/10">
-                  {(plan as any).oldPrice && (
+                  {plan.oldPrice && (
                     <div className="text-sm text-slate-500 line-through mb-1 font-medium">
                       {plan.oldPrice}
                     </div>
@@ -117,7 +117,7 @@ const Pricing = () => {
                       {plan.period}
                     </span>
                   </div>
-                  {(plan as any).oldPrice && (
+                  {plan.oldPrice && (
                     <div className="inline-block px-2 py-0.5 rounded bg-green-500/10 text-green-400 text-[10px] font-bold mt-3 uppercase tracking-wider">
                       Maxsus chegirma!
                     </div>
@@ -128,7 +128,7 @@ const Pricing = () => {
               {/* Specific Features - Only if they exist */}
               {plan.features.length > 0 && (
                 <div className="mb-8 flex-1">
-                  <p className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-4">Eksklyuziv imkoniyatlar:</p>
+                  <p className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-4">Paket tarkibi:</p>
                   <ul className="space-y-4">
                     {plan.features.map((feature, i) => (
                       <li key={i} className="flex items-start gap-3">

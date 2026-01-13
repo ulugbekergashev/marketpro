@@ -56,47 +56,124 @@ export const PAIN_POINTS = [
 export const CURRICULUM = [
   {
     step: "Module 1",
-    title: "Fundamental Tahlil & Strategiya",
-    desc: "Bozorni shunchaki ko'rish emas, uni rentgen qilish. 99% sotuvchilar bilmaydigan 'yashirin talab'ni topish va raqobatsiz hududga kirish.",
+    title: "Marketpleyslarga kirish",
+    desc: "Marketpleyslar nima va ular qanday ishlaydi. Rossiyadagi asosiy maydonlar (WB, Ozon, Yandex) va ularning xususiyatlari.",
     details: [
-      "Unit-ekonomika: Foydani oldindan ko'rish",
-      "Raqobatchilarni 'sindirish' strategiyasi",
-      "Xatersiz nishani tanlash formulasi"
+      "Marketpleys va internet-do'kon farqi",
+      "WB, Ozon, Yandex Market tahlili",
+      "Tovar uchun maydon tanlash"
     ],
     color: "blue"
   },
   {
     step: "Module 2",
-    title: "Xitoy & Global Logistika",
-    desc: "Mahsulotni tannarxini 30-40% ga tushirish sirlari. Ishonchli fabrikalar bilan to'g'ridan-to'g'ri ishlash va eng arzon logistika zanjirini qurish.",
+    title: "SEO asoslari",
+    desc: "Qidiruv algoritmlari bilan ishlash. Kartochkangizni qidiruvda TOPga olib chiqish sirlari.",
     details: [
-      "Xitoy fabrikalari bilan muzokaralar",
-      "Logistika zanjirini optimallashtirish",
-      "Bojxona va sertifikatlash masalalari"
+      "Kalit so'zlarni to'g'ri tanlash",
+      "WB, Ozon va Yandexda SEO farqlari",
+      "SEO optimizatsiya strategiyasi"
     ],
     color: "purple"
   },
   {
     step: "Module 3",
-    title: "Premium Qadoqlash & Neyromarketing",
-    desc: "Mijozni 'sotib olish' tugmasini bosishga majbur qiluvchi vizual va psixologik tryuklar. Oddiy tovardan brend yaratish.",
+    title: "Mahsulot kartochkalari",
+    desc: "Mijozni bir ko'rishda jalb qiluvchi kontent yaratish. Foto, sarlavha va tavsiflar.",
     details: [
-      "Sotuvchi kontent va infografika",
-      "Mijoz psixologiyasi",
-      "Brending asoslari"
+      "Sotuvchi infografika va foto",
+      "Jozibador sarlavhalar yozish",
+      "Konversiyani oshiruvchi tavsiflar"
     ],
     color: "pink"
   },
   {
     step: "Module 4",
-    title: "Algoritmlar & Masshtab",
-    desc: "Sun'iy intellekt yordamida SEO. Reklama byudjetini 'yoqmasdan' TOP-1 ga chiqish strategiyasi va 10x daromadga chiqish.",
+    title: "Assortiment va ma'lumotlar tahlili",
+    desc: "Raqamlar bilan ishlash. Qaysi tovar foyda keltirishini aniqlash va xitlarni topish.",
     details: [
-      "WB va Ozon qidiruv algoritmlari (SEO)",
-      "Ichki va tashqi reklama",
-      "Savdoni avtomatlashtirish"
+      "Oborot va rentabellik tahlili",
+      "Xit tovarlarni topish formulasi",
+      "Excel va Google Sheetsda hisobotlar"
     ],
     color: "orange"
+  },
+  {
+    step: "Module 5",
+    title: "Marketpleyslarda logistika",
+    desc: "Logistika modellarini tanlash va boshqarish. FBS, FBO va DBS modellarining afzalliklari.",
+    details: [
+      "Logistika modellarini tanlash",
+      "Zaxiralarni boshqarish va yetkazib berish",
+      "Qaytarishlar bilan ishlash"
+    ],
+    color: "green"
+  },
+  {
+    step: "Module 6",
+    title: "Reklama va targ'ibot",
+    desc: "Ichki va tashqi reklama vositalari. Minimal budjet bilan maksimal natija.",
+    details: [
+      "Targeting va aksiyalar",
+      "Reklama kampaniyalarini sozlash",
+      "Tashqi trafik (SMM, Blogerlar)"
+    ],
+    color: "indigo"
+  },
+  {
+    step: "Module 7",
+    title: "Sharhlar va reputatsiya",
+    desc: "Mijozlar ishonchini qozonish. Sharhlar orqali sotuvlarni oshirish.",
+    details: [
+      "Ijobiy sharhlar olish strategiyasi",
+      "Negativ sharhlar bilan ishlash",
+      "Brend reputatsiyasini qurish"
+    ],
+    color: "cyan"
+  },
+  {
+    step: "Module 8",
+    title: "Unit-ekonomika (2 dars)",
+    desc: "Har bir tovarning rentabelligini hisoblash. Biznesingizni 'minus'ga kirmasligini ta'minlash.",
+    details: [
+      "Unit-ekonomika asoslari",
+      "Samaradorlikni baholash",
+      "Foydani optimallashtirish"
+    ],
+    color: "red"
+  },
+  {
+    step: "Module 9",
+    title: "Jarayonlarni avtomatlashtirish",
+    desc: "Vaqtni tejash va samaradorlikni oshirish. Avtomatlashtirish vositalari va dasturlar.",
+    details: [
+      "Avtobidderlar va stavkalar",
+      "Vazifalarni tizimlashtirish",
+      "Analitika servislarini ulash"
+    ],
+    color: "teal"
+  },
+  {
+    step: "Module 10",
+    title: "Keyslar va xatolar tahlili",
+    desc: "Real misollar orqali o'rganish. Yangi boshlovchilar yo'l qo'yadigan xatolar.",
+    details: [
+      "Muvaffaqiyatli va muvaffaqiyatsiz keyslar",
+      "Tipik xatolar va ularning yechimi",
+      "Shaxsiy keyslar muhokamasi"
+    ],
+    color: "yellow"
+  },
+  {
+    step: "Module 11",
+    title: "Amaliyot va savol-javob",
+    desc: "Bilimlarni amalda qo'llash. Mashtablashtirish bo'yicha yakuniy tavsiyalar.",
+    details: [
+      "Yakuniy amaliy vazifa",
+      "Savol-javob sessiyasi",
+      "Mashtablashtirish strategiyasi"
+    ],
+    color: "emerald"
   }
 ];
 
@@ -120,7 +197,16 @@ export const PRICING_PLANS = [
     period: "",
     subtitle: "2 ta marketpleys",
     marketplaces: ["Uzum", "Yandex Market"],
-    features: [],
+    features: [
+      "UZUM bilan ishlash: shartnomadan tovar tanlashgacha",
+      "Unikal kartochkalar yaratish (foto, sarlavha, tavsif)",
+      "Assortiment tahlili: xitlarni topish",
+      "Logistika turlari: FBS, FBO, DBS tanlash",
+      "Reklama sozlash: samarali kampaniyalar",
+      "Ijobiy sharhlar strategiyasi",
+      "Xitoydan to'g'ridan-to'g'ri xaridlar",
+      "MPstats: 1 oy bepul"
+    ],
     highlight: false
   },
   {
@@ -130,7 +216,16 @@ export const PRICING_PLANS = [
     period: "",
     subtitle: "2 ta platforma",
     marketplaces: ["Wildberries", "Ozon"],
-    features: [],
+    features: [
+      "Wildberries va Ozon platformalarida ishlash",
+      "Unikal kartochkalar yaratish (foto, sarlavha, tavsif)",
+      "Assortiment tahlili: xitlarni topish",
+      "Logistika turlari: FBS, FBO, DBS tanlash",
+      "Reklama sozlash: samarali kampaniyalar",
+      "Ijobiy sharhlar strategiyasi",
+      "Xitoydan to'g'ridan-to'g'ri xaridlar",
+      "MPstats: 1 oy bepul"
+    ],
     highlight: false
   },
   {
@@ -140,7 +235,13 @@ export const PRICING_PLANS = [
     period: "",
     subtitle: "3 ta platforma",
     marketplaces: ["Wildberries", "Uzum", "Yandex"],
-    features: [],
+    features: [
+      "Ozon, Wildberries va Yandex Marketda ishlash",
+      "Tovar xaridi uchun budjet: $1000 - $1500",
+      "Haftada 2 marta 2 soatlik darslar",
+      "MPstats: 1 oy bepul",
+      "Barcha standart imkoniyatlar"
+    ],
     highlight: false
   },
   {
@@ -150,7 +251,13 @@ export const PRICING_PLANS = [
     period: "",
     subtitle: "3 ta platforma",
     marketplaces: ["Ozon", "Uzum", "Yandex"],
-    features: [],
+    features: [
+      "Ozon, Wildberries va Yandex Marketda ishlash",
+      "Tovar xaridi uchun budjet: $1000 - $1500",
+      "Haftada 2 marta 2 soatlik darslar",
+      "MPstats: 1 oy bepul",
+      "Barcha standart imkoniyatlar"
+    ],
     highlight: false
   },
   {
@@ -160,7 +267,13 @@ export const PRICING_PLANS = [
     period: "",
     subtitle: "3 ta platforma",
     marketplaces: ["Wildberries", "Ozon", "Yandex"],
-    features: [],
+    features: [
+      "Ozon, Wildberries va Yandex Marketda ishlash",
+      "Tovar xaridi uchun budjet: $1000 - $1500",
+      "Haftada 2 marta 2 soatlik darslar",
+      "MPstats: 1 oy bepul",
+      "Barcha standart imkoniyatlar"
+    ],
     highlight: false
   },
   {
@@ -170,7 +283,15 @@ export const PRICING_PLANS = [
     period: "",
     subtitle: "4 ta platforma",
     marketplaces: ["Wildberries", "Ozon", "Uzum", "Yandex"],
-    features: [],
+    features: [
+      "Kurator bilan individual yondashuv",
+      "Platformalar va strategiyalarni chuqur o'rganish",
+      "Xitoy, Turkiya va Rossiyaga amaliy sayohatlar",
+      "Biznes-nonushta va kechki ovqatlar",
+      "Biznes-forumlarda ishtirok etish",
+      "MPstats: 3 oy bepul",
+      "Haftada 3 marta 2 soatlik darslar"
+    ],
     highlight: false
   },
   {
@@ -182,7 +303,10 @@ export const PRICING_PLANS = [
     features: [
       "Oylik min. $1000 daromad",
       "Ish topib berish kafolati",
-      "To'liq biznes boshqaruvi"
+      "To'liq biznes boshqaruvi",
+      "4 oy davomida bepul o'qish imkoniyati",
+      "Ekspertlar bilan biznes-reja ishlab chiqish",
+      "MPstats: 4 oy bepul"
     ],
     highlight: true
   }
