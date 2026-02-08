@@ -4,7 +4,7 @@ import { TrendingUp, BarChart3 } from 'lucide-react';
 const MarketOpportunity = () => {
   return (
     <section
-      className="py-24 bg-[#0B0F19] relative overflow-hidden"
+      className="py-24 bg-[#020617] relative overflow-hidden"
       style={{ contentVisibility: 'auto', containIntrinsicSize: '600px' } as any}
     >
       <div className="container mx-auto px-6">

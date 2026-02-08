@@ -9,7 +9,7 @@ const iconMap: Record<string, React.FC<any>> = {
 
 const Sellers = () => {
     return (
-        <section id="sellers" className="py-24 bg-[#0B0F19] relative overflow-hidden">
+        <section id="sellers" className="py-24 bg-[#020617] relative overflow-hidden">
             {/* Background decoration */}
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
                 <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] bg-blue-600/5 rounded-full blur-[100px]"></div>
@@ -38,7 +38,7 @@ const Sellers = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                                className="group p-8 rounded-[2.5rem] bg-white/5 border border-white/10 hover:border-blue-500/30 transition-all duration-300 relative overflow-hidden flex flex-col h-full"
+                                className="group p-8 rounded-[2.5rem] bg-[#0E1528] border border-blue-500/20 hover:border-blue-500/60 hover:shadow-[0_0_40px_rgba(37,99,235,0.15)] transition-all duration-300 relative overflow-hidden flex flex-col h-full z-10"
                             >
                                 <div className="w-16 h-16 bg-blue-600/10 border border-blue-500/20 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
                                     <Icon className="w-8 h-8 text-blue-500" />
@@ -62,7 +62,7 @@ const Sellers = () => {
                 </div>
 
                 {/* Guarantee Banner */}
-                <div className="mt-16 p-8 md:p-12 rounded-[2.5rem] bg-gradient-to-r from-blue-600/20 to-indigo-600/20 border border-blue-500/30 relative overflow-hidden">
+                <div className="mt-16 p-8 md:p-12 rounded-[2.5rem] bg-gradient-to-br from-blue-600/30 via-indigo-600/10 to-transparent border border-blue-500/40 relative overflow-hidden shadow-[0_0_80px_rgba(37,99,235,0.1)]">
                     <div className="flex flex-col md:flex-row items-center justify-between gap-8 relative z-10">
                         <div className="flex-1">
                             <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">15 kun ichida TOP savdolarga chiqish kafolati</h3>

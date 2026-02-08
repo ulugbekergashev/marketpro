@@ -13,7 +13,7 @@ const JobGuarantee = () => {
 
   return (
     <section
-      className="py-20 bg-gradient-to-r from-blue-900 to-brand-dark relative border-y border-white/5 overflow-hidden"
+      className="py-20 bg-gradient-to-r from-blue-900 to-[#020617] relative border-y border-white/5 overflow-hidden"
       style={{ contentVisibility: 'auto', containIntrinsicSize: '600px' } as any}
     >
       {/* Background patterns - Simplified */}

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const Stats = () => {
   return (
-    <section className="bg-brand-dark py-10 border-y border-white/5 relative z-20">
+    <section className="bg-[#020617] py-10 border-y border-white/5 relative z-20">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-white/5">
           {STATS.map((stat, index) => (

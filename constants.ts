@@ -12,21 +12,47 @@ export const SERVICES = []; // Cleared as requested
 export const SELLER_SERVICES = [
   {
     title: "Kompleks Boshqaruv",
-    description: "Marketpleys do'koningizni noldan TOPga olib chiqamiz. Strategiya, SEO, reklama va logistika - hammasi bizning zimmamizda.",
-    price: "$1000/oy + 2% KPI",
-    icon: "Store"
+    description: "Do'konni noldan yoki mavjudini to'liq boshqarish. Strategiya, SEO, reklama, logistika va zaxiralar boshqaruvi.",
+    price: "Individual",
+    icon: "Store",
+    details: [
+      "Marketpleys strategiyasi va rivojlanish rejasi",
+      "SEO: kalit so'zlar, pozitsiya nazorati va optimizatsiya",
+      "Kartochkalarni yangilash va sotuvga moslash",
+      "Assortiment, foyda va aylanma tahlili",
+      "Reklama kampaniyalarini yuritish va optimizatsiya",
+      "Logistika va zaxiralar boshqaruvi",
+      "Haftalik hisobot va strategik yangilanishlar"
+    ]
   },
   {
     title: "Mentorlik (2 oy)",
-    description: "Biznesingizni masshtablashtirish bo'yicha intensiv yo'l-yo'riq. Haftalik strategik sessiyalar va shaxsiy yondashuv.",
-    price: "$3000",
-    icon: "Users"
+    description: "Mavjud do'kon asosida individual o'qitish va shaxsiy mentorlik sessiyalari.",
+    price: "Individual",
+    icon: "Users",
+    details: [
+      "Har kuni 2 soatlik mentorlik sessiyalari",
+      "Do'konni chuqur tahlil qilish",
+      "SEO va kartochkalarni real misollarda yaxshilash",
+      "Reklama va savdo strategiyalarini qayta qurish",
+      "Marketpleys funksiyalari va algoritmlarini amalda o'rganish",
+      "Unit-ekonomika va foyda oshirish",
+      "Qarorlarni tushuntirish bilan ishlab chiqish"
+    ]
   },
   {
     title: "VIP Mentorlik (Yillik)",
-    description: "Kompaniya CEO si bilan shaxsiy ishlash. 12 oylik strategik reja, jamoani o'qitish va eksklyuziv networking.",
-    price: "$10000",
-    icon: "Star"
+    description: "Kompaniya CEO'si bilan shaxsiy mentorlik va 12 oylik strategik reja.",
+    price: "Individual",
+    icon: "Star",
+    details: [
+      "12 oylik strategik reja",
+      "Mentorlik (2 oy) dagi barcha imkoniyatlar",
+      "Biznesni mashtablash va tizimlashtirish",
+      "Jamoani o'qitish",
+      "Yuqori darajadagi kontaktlar va networking",
+      "Murakkab qarorlar bo'yicha to'g'ridan-to'g'ri maslahat"
+    ]
   }
 ];
 
@@ -186,93 +212,117 @@ export const COMMON_FEATURES = [
   "Shaxsiy menejer maslahatlari",
   "Hujjatlar va shartnomalar bilan ishlash",
   "Kengaytirilgan bozor tahlili",
-  "Raqobatchilar doimiy monitoringi"
+  "Raqobatchilar doimiy monitoringi",
+  "Excel bo'yicha bazoviy kurs (BONUS)",
+  "Xitoy bilan ishlash bo'yicha bazoviy kurs (BONUS)",
+  "Blogerlar bn ishlash bo'yicha bazoviy kurs (BONUS)"
 ];
 
 export const PRICING_PLANS = [
   {
-    name: "Uzum Yandex",
+    name: "Uzum + Yandex",
     price: "$1200",
     oldPrice: "$1500",
     period: "",
-    subtitle: "2 ta marketpleys",
+    subtitle: "Uzum, Yandex Market",
     marketplaces: ["Uzum", "Yandex Market"],
     features: [
-      "UZUM bilan ishlash: shartnomadan tovar tanlashgacha",
-      "Unikal kartochkalar yaratish (foto, sarlavha, tavsif)",
-      "Assortiment tahlili: xitlarni topish",
-      "Logistika turlari: FBS, FBO, DBS tanlash",
-      "Reklama sozlash: samarali kampaniyalar",
-      "Ijobiy sharhlar strategiyasi",
+      "Marketpleys asoslari va platforma tanlash",
+      "Uzum va Yandex'da ishlash (shartnoma, sozlash, start)",
+      "SEO: kalit so'zlar va qidiruvda chiqish",
+      "Sotuvchi kartochkalar (foto, sarlavha, tavsif)",
+      "Assortiment tahlili: xit va nolikvid",
+      "Logistika: FBS, FBO, DBS",
+      "Reklama sozlash va aksiyalar",
+      "Sharhlar va reputatsiya",
       "Xitoydan to'g'ridan-to'g'ri xaridlar",
-      "MPstats: 1 oy bepul"
+      "Unit-ekonomika asoslari",
+      "Analitika servislaridan foydalanish: 2 oy bepul"
     ],
     highlight: false
   },
   {
-    name: "WB Ozon",
+    name: "WB + Ozon",
     price: "$1500",
     oldPrice: "$2000",
     period: "",
-    subtitle: "2 ta platforma",
+    subtitle: "Wildberries, Ozon",
     marketplaces: ["Wildberries", "Ozon"],
     features: [
-      "Wildberries va Ozon platformalarida ishlash",
-      "Unikal kartochkalar yaratish (foto, sarlavha, tavsif)",
-      "Assortiment tahlili: xitlarni topish",
-      "Logistika turlari: FBS, FBO, DBS tanlash",
-      "Reklama sozlash: samarali kampaniyalar",
-      "Ijobiy sharhlar strategiyasi",
-      "Xitoydan to'g'ridan-to'g'ri xaridlar",
-      "MPstats: 1 oy bepul"
+      "Marketpleyslarda ishlash algoritmlari",
+      "SEO va platforma qoidalari",
+      "Kuchli kartochkalar yaratish",
+      "Assortiment va savdo tahlili",
+      "Logistika va qaytishlar",
+      "Reklama kampaniyalarini",
+      "Sharhlar bilan ishlash",
+      "Xitoydan tovar tanlash",
+      "Unit-ekonomika va rentabellik",
+      "Real keyslar va xatolar",
+      "Analitika servislaridan foydalanish: 2 oy bepul"
     ],
     highlight: false
   },
   {
-    name: "WB Uzum Yandex",
+    name: "WB + Uzum + Yandex",
     price: "$2000",
     oldPrice: "$3000",
     period: "",
-    subtitle: "3 ta platforma",
+    subtitle: "Wildberries, Uzum, Yandex",
     marketplaces: ["Wildberries", "Uzum", "Yandex"],
     features: [
-      "Ozon, Wildberries va Yandex Marketda ishlash",
-      "Tovar xaridi uchun budjet: $1000 - $1500",
-      "Haftada 2 marta 2 soatlik darslar",
-      "MPstats: 1 oy bepul",
-      "Barcha standart imkoniyatlar"
+      "3 platformada parallel ishlash",
+      "SEO va algoritmlar farqi",
+      "Professional kartochkalar",
+      "Assortimentni chuqur tahlil qilish",
+      "Logistika va zaxira boshqaruvi",
+      "Reklama va savdo o'sishi",
+      "Sharhlar orqali konversiya",
+      "Unit-ekonomika va foyda hisoblash",
+      "Avtomatlashtirish asoslari",
+      "Analitika servislaridan foydalanish: 3 oy bepul"
     ],
     highlight: false
   },
   {
-    name: "Ozon Uzum Yandex",
+    name: "Ozon + Uzum + Yandex",
     price: "$2000",
     oldPrice: "$3000",
     period: "",
-    subtitle: "3 ta platforma",
+    subtitle: "Ozon, Uzum, Yandex",
     marketplaces: ["Ozon", "Uzum", "Yandex"],
     features: [
-      "Ozon, Wildberries va Yandex Marketda ishlash",
-      "Tovar xaridi uchun budjet: $1000 - $1500",
-      "Haftada 2 marta 2 soatlik darslar",
-      "MPstats: 1 oy bepul",
-      "Barcha standart imkoniyatlar"
+      "3 marketpleysda to'liq savdo tizimi",
+      "SEO va qidiruv strategiyalari",
+      "Sotuvchi kontent va kartochkalar",
+      "Assortiment va aylanma tahlili",
+      "Logistika optimallashtirish",
+      "Reklama va aksiyalar",
+      "Sharhlar va mijoz ishonchi",
+      "Unit-ekonomika",
+      "Avtomatlashtirishga kirish",
+      "Analitika servislaridan foydalanish: 3 oy bepul"
     ],
     highlight: false
   },
   {
-    name: "WB Ozon Yandex",
+    name: "WB + Ozon + Yandex",
     price: "$2000",
     oldPrice: "$3000",
     period: "",
-    subtitle: "3 ta platforma",
+    subtitle: "Wildberries, Ozon, Yandex",
     marketplaces: ["Wildberries", "Ozon", "Yandex"],
     features: [
-      "Ozon, Wildberries va Yandex Marketda ishlash",
-      "Tovar xaridi uchun budjet: $1000 - $1500",
-      "Haftada 2 marta 2 soatlik darslar",
-      "MPstats: 1 oy bepul",
-      "Barcha standart imkoniyatlar"
+      "3 platformada professional savdo",
+      "SEO va algoritmlar",
+      "Kartochkalarni maksimal konversiya uchun sozlash",
+      "Assortiment va foyda tahlili",
+      "Logistika va qaytishlar",
+      "Reklama strategiyasi",
+      "Sharhlar va reputatsiya",
+      "Unit-ekonomika",
+      "Avtomatlashtirish asoslari",
+      "Analitika servislaridan foydalanish: 3 oy bepul"
     ],
     highlight: false
   },
@@ -281,34 +331,96 @@ export const PRICING_PLANS = [
     price: "$2500",
     oldPrice: "$4000",
     period: "",
-    subtitle: "4 ta platforma",
+    subtitle: "WB, Ozon, Uzum, Yandex",
     marketplaces: ["Wildberries", "Ozon", "Uzum", "Yandex"],
     features: [
-      "Kurator bilan individual yondashuv",
-      "Platformalar va strategiyalarni chuqur o'rganish",
-      "Xitoy, Turkiya va Rossiyaga amaliy sayohatlar",
-      "Biznes-nonushta va kechki ovqatlar",
-      "Biznes-forumlarda ishtirok etish",
-      "MPstats: 3 oy bepul",
-      "Haftada 3 marta 2 soatlik darslar"
+      "Barcha platformalarda chuqur ishlash",
+      "Individual kurator",
+      "SEO, reklama va strategiyalarni chuqur o'rganish",
+      "Assortiment va unit-ekonomika",
+      "Avtomatlashtirish va analitika",
+      "Xitoy va Turkiya bozorlarini o'rganish",
+      "Biznes-nonushta va networking",
+      "Biznes-forumlarda ishtirok",
+      "Analitika servislaridan foydalanish: 4 oy bepul"
     ],
     highlight: false
   },
   {
     name: "Menegerlik Tarifi",
     price: "$2000",
+    oldPrice: "$3500",
     period: "",
-    subtitle: "Ish ta'minoti kafolati",
+    subtitle: "WB, Ozon, Uzum, Yandex",
     marketplaces: ["Wildberries", "Ozon", "Uzum", "Yandex"],
     features: [
+      "Marketpleys menejeri sifatida to'liq tayyorlov",
+      "Barcha platformalarda professional boshqaruv",
+      "SEO, reklama va analitika (chuqur)",
+      "Unit-ekonomika va biznes qarorlar",
+      "To'liq biznes boshqaruvi amaliyoti",
+      "Ishga joylashish kafolati",
       "Oylik min. $1000 daromad",
-      "Ish topib berish kafolati",
-      "To'liq biznes boshqaruvi",
-      "4 oy davomida bepul o'qish imkoniyati",
-      "Ekspertlar bilan biznes-reja ishlab chiqish",
-      "MPstats: 4 oy bepul"
+      "4 oy bepul o'qish",
+      "Analitika servislaridan foydalanish: 4 oy bepul"
     ],
     highlight: true
+  },
+  {
+    name: "Kompleks Boshqaruv",
+    price: "Individual",
+    oldPrice: "",
+    period: "",
+    subtitle: "WB, Ozon, Uzum, Yandex",
+    marketplaces: ["Wildberries", "Ozon", "Uzum", "Yandex"],
+    features: [
+      "Do'konni noldan yoki mavjudini to'liq boshqarish",
+      "Marketpleys strategiyasi va rivojlanish rejasi",
+      "SEO: kalit so'zlar, pozitsiya nazorati va optimizatsiya",
+      "Kartochkalarni yangilash va sotuvga moslash",
+      "Assortiment, foyda va aylanma tahlili",
+      "Reklama kampaniyalarini yuritish va optimizatsiya",
+      "Logistika va zaxiralar boshqaruvi",
+      "Haftalik hisobot va strategik yangilanishlar"
+    ],
+    highlight: false
+  },
+  {
+    name: "Mentorlik (2 oy)",
+    price: "Individual",
+    oldPrice: "",
+    period: "",
+    subtitle: "Sizning do'koningiz",
+    marketplaces: ["Sizning do'koningiz"],
+    features: [
+      "Mavjud do'kon asosida individual o'qitish",
+      "Har kuni 2 soatlik mentorlik sessiyalari",
+      "Do'konni chuqur tahlil qilish",
+      "SEO va kartochkalarni real misollarda yaxshilash",
+      "Reklama va savdo strategiyalarini qayta qurish",
+      "Marketpleys funksiyalari va algoritmlarini amalda o'rganish",
+      "Unit-ekonomika va foyda oshirish",
+      "Qarorlarni tushuntirish bilan ishlab chiqish"
+    ],
+    highlight: false
+  },
+  {
+    name: "VIP Mentorlik (Yillik)",
+    price: "Individual",
+    oldPrice: "",
+    period: "",
+    subtitle: "Sizning do'koningiz + jamoa",
+    marketplaces: ["Sizning do'koningiz + jamoa"],
+    features: [
+      "Kompaniya CEO'si bilan shaxsiy mentorlik",
+      "12 oylik strategik reja",
+      "Mentorlik (2 oy) dagi barcha imkoniyatlar",
+      "Biznesni masshtablash va tizimlashtirish",
+      "Jamoani o'qitish",
+      "Yuqori darajadagi kontaktlar va networking",
+      "Murakkab qarorlar bo'yicha to'g'ridan-to'g'ri maslahat"
+    ],
+    highlight: false
   }
 ];
 
@@ -403,14 +515,13 @@ Kompaniya haqida:
 Market Pro Academy - marketpleyslarda savdo qilishni o'rgatuvchi (Academy) va bizneslarni boshqaruvchi (B2B) kompaniya. 7 yillik tajriba. 400+ mijoz. 50+ xodim. Ofislar Toshkent, Samarqand va Moskvada.
 
 TA'LIM (ACADEMY):
-- Kurslar: Uzum, Yandex, WB, Ozon.
-- Narxlar: $1200 dan $2500 gacha.
-- Kafolat: Bitiruvchilarga $1000+ maoshli ish topib berish.
+- Kurslar: Uzum+Yandex ($1200), WB+Ozon ($1500), WB+Uzum+Yandex ($2000), Ozon+Uzum+Yandex ($2000), WB+Ozon+Yandex ($2000), Barcha Marketpleyslar ($2500), Menegerlik Tarifi ($2000).
+- Kafolat: Bitiruvchilarga $1000+ maoshli ish topib berish (Menegerlik tarifida).
 
 B2B XIZMATLAR (SELLERS):
-1. Kompleks Boshqaruv ($1000/oy + 2% KPI): Do'konni to'liq boshqarish.
-2. Mentorlik ($3000, 2 oy): Biznesni masshtablashtirish.
-3. VIP Mentorlik ($10000/yil): CEO bilan shaxsiy ishlash.
+1. Kompleks Boshqaruv: Do'konni to'liq boshqarish.
+2. Mentorlik (2 oy): Biznesni masshtablashtirish.
+3. VIP Mentorlik (Yillik): CEO bilan shaxsiy ishlash.
 - Kafolat: 15 kun ichida TOP savdolarga chiqish.
 
 Muloqot uslubi:

@@ -7,7 +7,7 @@ const Testimonials = () => {
   return (
     <section
       id="results"
-      className="py-24 bg-brand-dark relative overflow-hidden"
+      className="py-24 bg-[#020617] relative overflow-hidden"
       style={{ contentVisibility: 'auto', containIntrinsicSize: '800px' } as any}
     >
       {/* Background Gradients - Simplified */}

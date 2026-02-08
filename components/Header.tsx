@@ -57,7 +57,7 @@ const Header = () => {
               key={link.name}
               href={link.href}
               onClick={(e) => handleSmoothScroll(e, link.href)}
-              className="text-sm font-medium text-slate-300 hover:text-white hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] transition-all"
+              className="text-sm font-medium text-slate-300 hover:text-blue-400 transition-colors"
             >
               {link.name}
             </a>

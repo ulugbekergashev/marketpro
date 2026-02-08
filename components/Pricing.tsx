@@ -15,7 +15,7 @@ const Pricing = () => {
   return (
     <section
       id="pricing"
-      className="py-24 bg-[#0B0F19]"
+      className="py-24 bg-[#020617]"
       style={{ contentVisibility: 'auto', containIntrinsicSize: '800px' } as any}
     >
       <div className="container mx-auto px-6">

@@ -7,7 +7,7 @@ const Curriculum = () => {
   return (
     <section
       id="curriculum"
-      className="py-24 bg-brand-dark relative"
+      className="py-24 bg-[#020617] relative"
       style={{ contentVisibility: 'auto', containIntrinsicSize: '1000px' } as any}
     >
       {/* Background Glow - Simplified */}

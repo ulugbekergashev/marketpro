@@ -19,7 +19,7 @@ import Header from './components/Header';
 
 function App() {
   return (
-    <div className="min-h-screen bg-brand-dark relative selection:bg-brand-blue selection:text-white overflow-x-hidden">
+    <div className="min-h-screen bg-[#020617] relative selection:bg-brand-blue selection:text-white overflow-x-hidden">
 
       <Header />
       <main>
